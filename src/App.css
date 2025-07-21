@@ -1,0 +1,65 @@
+.App-header {  /* photo-backgrand */
+  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  background-image: url('./palmier-bali.jpeg');
+  background-size: cover; /* L’image prend toute la taille du conteneur */
+  background-position: center; /* L’image est centrée */
+  background-repeat: no-repeat; /* Pas de répétition de l’image */
+  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
+  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+  .overlay-app {  /* calque sur la photo */
+  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 29, 29, 0.725); /* teinte du fond */
+  z-index: 1; /* derrière */
+}
+
+.title-app {   /* titre */
+
+  z-index: 2; /* très important → on les voit au-dessus */
+  color: rgb(224, 110, 110);
+  font-size: 64px;
+  text-shadow: 2px 2px 5px rgb(176, 12, 12); 
+  text-align: center;
+  font-style: italic;
+  margin-top: 0px
+  
+}
+
+.subtitle-app {  /* sous-titre */
+  z-index: 2; /* très important → on les voit au-dessus */
+  margin:  50px 0;
+  text-align: center;
+  color: rgb(255, 254, 254);
+  font-size: 25px;
+  padding: 80px;  /*espacement entre lui et le home-content*/
+}
+
+  .home-content-app {  /* encadrement */
+  
+  z-index: 2; 
+  max-width: 1500px; /* Largeur maximale du texte */
+  width: 90%;         /* ← Pour être responsive tout en restant large */
+  text-align: justify; /* Texte justifié */
+  background: rgba(165, 165, 165, 0.397); /* couleur de l'encadrement et opacité du blanc*/
+  padding: 30px 40px;
+  border-radius: 20px;
+   margin: 50px;
+  
+}
+
+.main-text {
+  
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+ /*  padding: 60px; */
+ 
+}
