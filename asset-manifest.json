@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Carnet-de-vadrouille/static/css/main.3c0bf2f8.css",
-    "main.js": "/Carnet-de-vadrouille/static/js/main.24350c9d.js",
+    "main.js": "/Carnet-de-vadrouille/static/js/main.019979ed.js",
     "static/js/453.85a4c1ff.chunk.js": "/Carnet-de-vadrouille/static/js/453.85a4c1ff.chunk.js",
     "static/media/palmier-bali.jpeg": "/Carnet-de-vadrouille/static/media/palmier-bali.9f9431bef68ae345397a.jpeg",
     "static/media/fondbali.jpg": "/Carnet-de-vadrouille/static/media/fondbali.ca1634f29bba2385c5e0.jpg",
@@ -19,11 +19,11 @@
     "static/media/bangkok4.jpg": "/Carnet-de-vadrouille/static/media/bangkok4.a795cfeda753de05e049.jpg",
     "index.html": "/Carnet-de-vadrouille/index.html",
     "main.3c0bf2f8.css.map": "/Carnet-de-vadrouille/static/css/main.3c0bf2f8.css.map",
-    "main.24350c9d.js.map": "/Carnet-de-vadrouille/static/js/main.24350c9d.js.map",
+    "main.019979ed.js.map": "/Carnet-de-vadrouille/static/js/main.019979ed.js.map",
     "453.85a4c1ff.chunk.js.map": "/Carnet-de-vadrouille/static/js/453.85a4c1ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0bf2f8.css",
-    "static/js/main.24350c9d.js"
+    "static/js/main.019979ed.js"
   ]
 }
