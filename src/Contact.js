@@ -12,7 +12,7 @@ function Contact() {
 
       <ul className="contact-list">
         <li>
-          <a href="https://github.com/ton-pseudo" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Victor34110/Carnet-de-vadrouille" target="_blank" rel="noopener noreferrer">
             <FaGithub className="icon" /> GitHub </a>
           
         </li>
