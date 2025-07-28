@@ -1,35 +1,35 @@
 .premiere-section {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  position: relative;                            /* pour l’overlay  */
   background-image: url('./sunsetthai.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover;                        /* L’image prend toute la taille */
+  background-position: center;                   /* L’image est centrée */
+  background-repeat: no-repeat;                  /* Pas de répétition de l’image */
+  min-height: 100vh;                             /* 100% de la hauteur de l'écran */
+  padding: 100px 20px;                           /* Espace intérieur en haut/bas, gauche/droite */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
   .overlay {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  position: absolute;                               /* Positionnement absolu par rapport à .thailande-container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(176, 105, 105, 0.7); /* teinte du fond */
+  background-color: rgba(176, 105, 105, 0.7);    /* teinte du fond */
   z-index: 1;
 }
 
   .content {  /* encadrement */
   position: relative;
-  z-index: 2; /* Passe devant l’overlay */
-  max-width: 1100px; /* Largeur maximale du texte */
-   width: 90%;         /* ← Pour être responsive tout en restant large */
-  color: #292929; /* Texte noir */
-  text-align: justify; /* Texte justifié */
-  font-size: 25px; /* Taille du texte */
-  background: rgba(251, 251, 251, 0.753); /* couleur de l'encadrement et opacité du blanc*/
+  z-index: 2;                                  /* Passe devant l’overlay */
+  max-width: 1100px;                           /* Largeur maximale du texte */
+   width: 90%;                                 /*  Pour être responsive */
+  color: #292929;                            
+  text-align: justify;                         
+  font-size: 25px;                             
+  background: rgba(251, 251, 251, 0.753);    
   padding: 30px;
   border-radius: 10px;
 }
@@ -56,41 +56,41 @@
   margin-bottom: 10px; 
 } 
 
-/* 🔽 2e SECTION */
+/*  2e SECTION */
 
 
 .deuxieme-section {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  position: relative;                  /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
   background-image: url('./2.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover;              /* L’image prend toute la taille du conteneur */
+  background-position: center;         
+  background-repeat: no-repeat;        
+  min-height: 100vh;                   /* 100% de la hauteur de l'écran */
+  padding: 100px 20px;                 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
   .overlay-2 {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  position: absolute;                  /* Positionnement absolu par rapport à .thailande-container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(83, 77, 77, 0.247); /* teinte du fond */
+  background-color: rgba(83, 77, 77, 0.247); 
   z-index: 1;
 }
 
   .texte-itineraire {  /* encadrement */
   position: relative;
-  z-index: 2; /* Passe devant l’overlay */
-  max-width: 1100px; /* Largeur maximale du texte */
-   width: 90%;         /* ← Pour être responsive tout en restant large */
-  color: #292929; /* Texte noir */
-  text-align: justify; /* Texte justifié */
-  font-size: 25px; /* Taille du texte */
-  background: rgba(251, 251, 251, 0.8); /* couleur de l'encadrement et opacité du blanc*/
+  z-index: 2;                     /* Passe devant l’overlay */
+  max-width: 1100px;              /* Largeur maximale du texte */
+   width: 90%;                    /*  Pour être responsive tout en restant large */
+  color: #292929;              
+  text-align: justify; 
+  font-size: 25px; 
+  background: rgba(251, 251, 251, 0.8); 
   padding: 30px;
   border-radius: 10px;
 }
@@ -108,37 +108,37 @@
 /* 🔽 3e SECTION bangkok */
 
 .troisieme-section {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  position: relative;                           
   background-image: url('./bangkok4.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover;                       
+  background-position: center;                  
+  background-repeat: no-repeat;                 
+  min-height: 100vh;                           
+  padding: 100px 20px;                          
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-  .overlay-3 {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  .overlay-3 {     /* fond */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(105, 100, 100, 0.438); /* teinte du fond */
+  background-color: rgba(105, 100, 100, 0.438); 
   z-index: 1;
 }
 
   .texte-bangkok {  /* encadrement */
   position: relative;
-  z-index: 2; /* Passe devant l’overlay */
-  max-width: 1100px; /* Largeur maximale du texte */
-   width: 90%;         /* ← Pour être responsive tout en restant large */
-  color: #292929; /* Texte noir */
-  text-align: justify; /* Texte justifié */
-  font-size: 25px; /* Taille du texte */
-  background: rgba(255, 252, 252, 0.7); /* couleur de l'encadrement et opacité du blanc*/
+  z-index: 2; 
+  max-width: 1100px; 
+   width: 90%;         
+  color: #292929; 
+  text-align: justify; 
+  font-size: 25px; 
+  background: rgba(255, 252, 252, 0.7); 
   padding: 30px;
   border-radius: 10px;
 }
@@ -147,10 +147,10 @@
 /* Positionnement des photos flottantes */
 .photo4, .photo5 {
   position: absolute;
-  max-width: 400px; /* grosseur */
+  max-width: 400px;               /* grosseur */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.9);
-  z-index: 3; /* devant le texte */
+  z-index: 3;                     /* devant le texte */
 }
 
 .photo5 {
@@ -165,7 +165,7 @@
 
 
 .activitebangkok-list { /* puces */
-  list-style-position: inside;   /* puces */
+  list-style-position: inside;  
   text-align: lefts;
   margin-top: 40px;
   padding-left: 20px;
@@ -178,88 +178,81 @@
   margin-bottom: 5px; 
 } 
 
-.troisiemesection h1 {
-  text-align: center;
-  color: #a31c1c;
-  font-size: 36px;
-  margin-bottom: 40px;
-}
 
-
-    /* 🔽 4e SECTION ao-nang */
+    /*  4e SECTION ao-nang */
 
 
 .quatrieme-section {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  position: relative; 
   background-image: url('./mangrove.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+  padding: 100px 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
   .overlay-4 {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(75, 67, 67, 0.381); /* teinte du fond */
+  background-color: rgba(75, 67, 67, 0.381); 
   z-index: 1;
 }
 
   .texte-ao-nang {  /* encadrement */
   position: relative;
-  z-index: 2; /* Passe devant l’overlay */
-  max-width: 1100px; /* Largeur maximale du texte */
-   width: 90%;         /* ← Pour être responsive tout en restant large */
-  color: #292929; /* Texte noir */
-  text-align: justify; /* Texte justifié */
-  font-size: 25px; /* Taille du texte */
-  background: rgba(251, 251, 251, 0.825); /* couleur de l'encadrement et opacité du blanc*/
+  z-index: 2; 
+  max-width: 1100px; 
+   width: 90%;        
+  color: #292929; 
+  text-align: justify; 
+  font-size: 25px; 
+  background: rgba(251, 251, 251, 0.825); 
   padding: 30px;
   border-radius: 10px;
 }
 
 
-           /* 🔽 5e SECTION koh-phiphi */    
+           /*  5e SECTION koh-phiphi */    
 
 .cinquieme-section {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  position: relative; 
   background-image: url('./koh-phi-phi.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+  padding: 100px 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
   .overlay-5 {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(113, 93, 93, 0.377); /* teinte du fond */
+  background-color: rgba(113, 93, 93, 0.377); 
   z-index: 1;
 }
 
   .texte-koh-phiphi {  /* encadrement */
   position: relative;
-  z-index: 2; /* Passe devant l’overlay */
-  max-width: 1100px; /* Largeur maximale du texte */
-   width: 90%;         /* ← Pour être responsive tout en restant large */
-  color: #292929; /* Texte noir */
-  text-align: justify; /* Texte justifié */
-  font-size: 25px; /* Taille du texte */
-  background: rgba(251, 251, 251, 0.747); /* couleur de l'encadrement et opacité du blanc*/
+  z-index: 2; 
+  max-width: 1100px; 
+   width: 90%;         
+  color: #292929; 
+  text-align: justify; 
+  font-size: 25px; 
+  background: rgba(251, 251, 251, 0.747); 
   padding: 30px;
   border-radius: 10px;
 }
@@ -268,37 +261,37 @@
 
       
 .sixieme-section {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+  position: relative; 
   background-image: url('./koh-lanta1.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+  padding: 100px 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
   .overlay-6 {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(42, 37, 37, 0.192); /* teinte du fond */
+  background-color: rgba(42, 37, 37, 0.192); 
   z-index: 1;
 }
 
-  .texte-koh-lanta {  /* encadrement */
+  .texte-koh-lanta {  
   position: relative;
-  z-index: 2; /* Passe devant l’overlay */
-  max-width: 1100px; /* Largeur maximale du texte */
-   width: 90%;         /* ← Pour être responsive tout en restant large */
-  color: #292929; /* Texte noir */
-  text-align: justify; /* Texte justifié */
-  font-size: 25px; /* Taille du texte */
-  background: rgba(251, 251, 251, 0.836); /* couleur de l'encadrement et opacité du blanc*/
+  z-index: 2; 
+  max-width: 1100px; 
+  width: 90%;         
+  color: #292929; 
+  text-align: justify; 
+  font-size: 25px; 
+  background: rgba(251, 251, 251, 0.836); 
   padding: 30px;
   border-radius: 10px;
 }

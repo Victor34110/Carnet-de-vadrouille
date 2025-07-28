@@ -1,30 +1,30 @@
-.App-header {  /* photo-backgrand */
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
+.App-header {                     /* photo-backgrand */
+  position: relative;             /* Nécessaire pour que l’overlay */
   background-image: url('./palmier-bali.jpeg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center; /* L’image est centrée */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
+  background-size: cover;         /* L’image prend toute la taille */
+  background-position: center;    /* L’image est centrée */
+  background-repeat: no-repeat;   
+  min-height: 100vh;              /* Hauteur minimum : 100% de la hauteur de l'écran */
+  padding: 100px 20px;            /* Espace intérieur :  haut/bas, gauche/droite */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-  .overlay-app {  /* calque sur la photo */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
+  .overlay-app {          /* Calque sombre */
+  position: absolute;    /* Positionnement absolu par rapport à .thailande-container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 29, 29, 0.725); /* teinte du fond */
+  background-color: rgba(30, 29, 29, 0.725); /* teinte du calque */
   z-index: 1; /* derrière */
 }
 
 .title-app {   /* titre */
 
-  z-index: 2; /* très important → on les voit au-dessus */
+  z-index: 2;       /* important à mettre quand on veut que c' soit au dessus */
   color: rgb(224, 110, 110);
   font-size: 64px;
   text-shadow: 2px 2px 5px rgb(176, 12, 12); 
@@ -35,7 +35,7 @@
 }
 
 .subtitle-app {  /* sous-titre */
-  z-index: 2; /* très important → on les voit au-dessus */
+  z-index: 2; 
   margin:  50px 0;
   text-align: center;
   color: rgb(255, 254, 254);
@@ -46,10 +46,10 @@
   .home-content-app {  /* encadrement */
   
   z-index: 2; 
-  max-width: 1500px; /* Largeur maximale du texte */
-  width: 90%;         /* ← Pour être responsive tout en restant large */
-  text-align: justify; /* Texte justifié */
-  background: rgba(165, 165, 165, 0.397); /* couleur de l'encadrement et opacité du blanc*/
+  max-width: 1500px;      /* Largeur maximale du texte */
+  width: 90%;             /* Option pour etre responsive et large */
+  text-align: justify;    /* Texte justifié */
+  background: rgba(165, 165, 165, 0.397); /* couleur de l'encadrement*/
   padding: 30px 40px;
   border-radius: 20px;
    margin: 50px;

@@ -1,85 +1,85 @@
 .destination-container {
-  position: relative; /* Pour que ::before soit positionné par rapport à ce conteneur */
+  position: relative;                        /* Pour que ::before soit positionné par rapport à ce conteneur */
 
-  background-image: url('./dossier-thailande/vatika.jpg'); /* Image de fond principale (le décor de ta page) */
-  background-size: cover;                /* L’image prend toute la largeur/hauteur sans déformation */
-  background-position: center;           /* Centre l’image pour l’afficher correctement */
-  background-repeat: no-repeat;          /* Ne répète pas l’image (une seule fois) */
-  min-height: 100vh;                     /* Hauteur = 100% de la hauteur de l'écran */
+  background-image: url('./dossier-thailande/vatika.jpg'); 
+  background-size: cover;                    /* L’image prend toute la largeur/hauteur */
+  background-position: center;           
+  background-repeat: no-repeat;              /* Ne répète pas l’image (une seule fois) */
+  min-height: 100vh;                         /* Hauteur = 100% de la hauteur de l'écran */
 
-  display: flex;                         /* Active Flexbox pour l’alignement */
-  flex-direction: column;               /* Les enfants (titre + cartes) sont empilés verticalement */
-  align-items: center;                  /* Centre les enfants horizontalement */
-  padding-top: 100px;                   /* Laisse un espace en haut (comme une marge intérieure) */
-  z-index: 0; /* s’assure que le contenu est au-dessus du calque */
+  display: flex;                             /* Active Flexbox pour l’alignement */
+  flex-direction: column;               
+  align-items: center;                       /* Centre les enfants horizontalement */
+  padding-top: 100px;                        /* Espacement entre titre et haut de page */
+  z-index: 0;                                /* s’assure que le contenu est au-dessus du calque */
 }
 
-.destination-container::before {
+.destination-container::before {             /* fonction pour que le calque ce mette sur la photo */
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* calque sombre semi-transparent */
-  z-index: -1; /* placé sous le contenu */
+  background-color: rgba(0, 0, 0, 0.4);    /* calque sombre semi-transparent */
+  z-index: -1;                               /* placé sous le contenu */
 }
 
 
 .destination-title {
-  font-size: 4rem;                       /* Grande taille pour le titre (4rem = environ 64px) */
-  color: white;                          /* Couleur du texte */
-  text-shadow: 2px 2px 8px black;        /* Donne un effet d’ombre pour la lisibilité sur une image */
-  margin-bottom: 60px;                  /* Espace entre le titre et les cases en dessous */
-  text-align: center;                   /* Centre le texte du titre */
+  font-size: 64px;                       
+  color: white;                          
+  text-shadow: 2px 2px 8px black;            /* effet d’ombre */
+  margin-bottom: 60px;                         /* Espace entre le titre et les cases en dessous */
+  text-align: center;                          /* Centre le texte du titre */
 }
 
 .cards-container {
-  display: flex;                         /* Flexbox pour aligner les cases */
-  flex-wrap: wrap;                       /* Permet aux cases d’aller à la ligne si trop nombreuses */
-  gap: 30px;                             /* Espace horizontal ET vertical entre les cases */
-  justify-content: center;              /* Centre les cases sur la ligne */
+  display: flex;                               /* alignement */
+  flex-wrap: wrap;                             /* Permet aux cases d’aller à la ligne si trop nombreuses */
+  gap: 30px;                                   /* Espace horizontal ET vertical entre les cases */
+  justify-content: center;                     /* Centre les cases sur la ligne */
 }
 
 .card {
-  width: 250px;                          /* Largeur fixe de chaque case */
-  height: 150px;                         /* Hauteur fixe */
-  border-radius: 12px;                   /* Coins arrondis */
-  text-decoration: none;                /* Enlève le soulignement du lien */
-  color: white;                          /* Couleur du texte */
-  font-size: 24px;                     /* Taille du texte  */
-  font-weight: bold;                    /* Texte en gras */
-  display: flex;                         /* Flex pour centrer le texte */
-  align-items: center;                  /* Centre verticalement le texte */
-  justify-content: center;              /* Centre horizontalement le texte */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);/* Ombre pour donner un relief */
-  transition: transform 0.2s ease;      /* Animation douce lors du survol */
+  width: 250px;                                 /* Largeur chaque case */
+  height: 150px;                                /* Hauteur fixe */
+  border-radius: 12px;                          /* Coins arrondis */
+  text-decoration: none;                        /* Enlève le soulignement du lien */
+  color: white;                          
+  font-size: 24px;                     
+  font-weight: bold;                             /* Texte en gras */
+  display: flex;                                 /* Flex pour centrer le texte */
+  align-items: center;                           /* Centre verticalement le texte */
+  justify-content: center;                       /* Centre horizontalement le texte */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);   /* Ombre relief */
+  transition: transform 0.2s ease;               /* Animation douce lors du survol */
 }
 .card:hover {
-  transform: scale(1.05);               /* Agrandit légèrement la case */
-  box-shadow: 0 8px 16px rgba(225, 35, 35, 0.4);/* Ombre plus forte pour un effet "surélevé" */
+  transform: scale(1.05);                           /* Agrandit légèrement la case */
+  box-shadow: 0 8px 16px rgba(225, 35, 35, 0.4);  /* Ombre plus forte pour un effet "surélevé" */
 }
 
 .card.thailande {
-  background-image: url('./dossier-thailande/fondthailande.jpg'); /* Met une image spécifique à cette case */
+  background-image: url('./dossier-thailande/fondthailande.jpg'); 
   background-size: cover;
   background-position: 30% 65%;
 }
 
 
 .card.bali {
-  background-image: url('./dossier-thailande/fondbali.jpg'); /* Met une image spécifique à cette case */
+  background-image: url('./dossier-thailande/fondbali.jpg'); 
   background-size: cover;
   background-position: 70% 80%;
 }
 
 
 .card.australie {
-  background-image: url('./dossier-thailande/fondaustralie.jpg'); /* Met une image spécifique à cette case */
+  background-image: url('./dossier-thailande/fondaustralie.jpg'); 
   background-size: cover;
   background-position: 70% 65%;
 }
 
 
 .card.singapour {
-  background-image: url('./dossier-thailande/fondsingapour.jpg'); /* Met une image spécifique à cette case */
+  background-image: url('./dossier-thailande/fondsingapour.jpg'); 
   background-size: cover;
   background-position: 70% 20%;
 }

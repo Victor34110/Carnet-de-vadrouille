@@ -1,8 +1,8 @@
 import React from 'react';
 import './Thailande.css';
 
-import bangkok4 from './bangkok4.jpg'; // autre image
-import bangkok5 from './bangkok5.jpg'; // autre image
+import bangkok4 from './bangkok4.jpg';  /* photo Bangkok1 */
+import bangkok5 from './bangkok5.jpg';  /* photo Bangkok2 */
 
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -162,19 +162,14 @@ useEffect(() => {
        </p>
 
       </div>
-
-       {/* Photos placées où tu veux <img src={ban..gkok4} alt="Photo Bangkok 4" className="photo7" />   /* pour photo placé ou on veut */}
-       {/* Photos placées où tu veux <img src={ban..gkok4} alt="Photo Bangkok 4" className="photo7" />   /* pour photo placé ou on veut */}
-
     </div>
 
 
         {/* 5e SECTION  */}
 
 <div className="cinquieme-section">
-<div className="overlay-5"></div>
-
-<div className="texte-koh-phiphi">
+  <div className="overlay-5"></div>
+    <div className="texte-koh-phiphi">
  
     <h2>3. Koh Phi Phi</h2>
 
@@ -204,10 +199,6 @@ useEffect(() => {
        </p>
 
       </div>
-
-       {/* Photos placées où tu veux <img src={ban..gkok4} alt="Photo Bangkok 4" className="photo7" />   /* pour photo placé ou on veut */}
-       {/* Photos placées où tu veux <img src={ban..gkok4} alt="Photo Bangkok 4" className="photo7" />   /* pour photo placé ou on veut */}
-
     </div>
 
 
@@ -216,9 +207,9 @@ useEffect(() => {
 
 
       <div className="sixieme-section">
-      <div className="overlay-6"></div>
+        <div className="overlay-6"></div>
+           <div className="texte-koh-lanta" data-aos="fade-up">
 
-      <div className="texte-koh-lanta" data-aos="fade-up">
     <h2>4.Koh Lanta</h2>
 
       <p>Située à environ <strong>70 km au sud de Krabi</strong>, dans la mer d’Andaman, <strong> Koh Lanta </strong> est accessible en bateau depuis Krabi ou Phuket.
@@ -256,15 +247,7 @@ useEffect(() => {
        
 
       </div>
-
-       {/* Photos placées où tu veux <img src={ban..gkok4} alt="Photo Bangkok 4" className="photo7" />   /* pour photo placé ou on veut */}
-       {/* Photos placées où tu veux <img src={ban..gkok4} alt="Photo Bangkok 4" className="photo7" />   /* pour photo placé ou on veut */}
-
     </div>
-
-  
-
-
    </> 
   );
 }
