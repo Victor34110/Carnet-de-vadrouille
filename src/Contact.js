@@ -22,7 +22,7 @@ function Contact() {
           
         </li>
         <li>
-          <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Carnet-de-vadrouille/CV.pdf" target="_blank" rel="noopener noreferrer">
             <FaFileAlt className="icon" /> Mon CV </a>
           
         </li>
