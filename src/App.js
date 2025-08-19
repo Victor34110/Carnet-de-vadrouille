@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 
 import Destination from './destination';
 import Thailande from './dossier-thailande/Thailande';
+import Bali from './dossier-bali/Bali';
 import Contact from './Contact';
 
 function App() {
@@ -48,9 +49,10 @@ function App() {
         <Route path="/destination" element={<Destination />} />
         <Route path="/thailande" element={<Thailande />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Bali" element={<Bali />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default App;   {/* Projet créé par Victor Galian – Carnet de Vadrouille © 2025*/}

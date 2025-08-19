@@ -8,7 +8,7 @@ function Destination() {
       <h1 className="destination-title">Destination :</h1>
 
 
-      <div className="cards-container">
+      <div className="cards-container">  {/* Petites cases  */}
         <Link to="/thailande" className="card thailande">
           Thaïlande
         </Link>

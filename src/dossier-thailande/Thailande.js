@@ -114,7 +114,7 @@ useEffect(() => {
 
   </div> 
 
-   {/* Photos placées où tu veux */}
+   
     <img src={bangkok4} alt="Marché flottant" className="photo4" />   {/* pour photo placé ou on veut */}
     <img src={bangkok5} alt="Photo Bangkok 5" className="photo5" />
 
