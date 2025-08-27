@@ -32,24 +32,31 @@ function App() {
 
           <header className="App-header">
             <div className="overlay-app"></div> {/* Calque sombre  */}
+
             <h1 className="title-app">Bienvenue dans mon Carnet de Vadrouille</h1>  {/* Titre  */}
-            <p className="subtitle-app">  {/* Sous-titre  */}
-              <strong>☀️ Découvrez mes voyages à travers le monde ☀️</strong>
-            </p>
-            <div className="home-content-app"> {/* Encadré  */}
-              <div className="main-text">  {/* Texte principal  */}
-                <p> 📌 Ce projet a été réalisé pour combiner ma passion ainsi que mes compétences en développement web. </p>
-                <p> Il prend la forme d’un blog interactif développé avec React, servant à la fois de carnet de voyage et de vitrine technique.</p>
-                <p>Vous pouvez retrouver l'ensemble du projet dans l'onglet contact</p>
-              </div>
+
+            <div className="subtitle-app">  {/* Sous-titre  */}
+              <strong>☀️ Découvrez mes voyages à travers le monde ☀️</strong></div> 
+            <div className="subtitle-app">  {/* Sous-titre  */}
+              <strong> 📌 Ce projet a été réalisé pour combiner ma passion ainsi que mes compétences en développement web📌 </strong> 
             </div>
+
+
+            <div className="main-text">  {/* Texte principal  */}
+                
+                <p><strong> Il prend la forme d’un blog interactif développé avec React, servant à la fois de carnet de voyage et de vitrine technique.</strong></p>
+                <p><strong>✦ Vous pouvez retrouver l'ensemble du projet dans l'onglet contact ✦</strong></p>
+            </div>
+            
           </header>
         } />
 
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/thailande" element={<Thailande />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Bali" element={<Bali />} />
+
+
+        <Route path="/destination" element={<Destination />}/>
+        <Route path="/thailande" element={<Thailande />}/>
+        <Route path="/Contact" element={<Contact />}/>
+        <Route path="/Bali" element={<Bali />}/>
       </Routes>
     </BrowserRouter>
   );

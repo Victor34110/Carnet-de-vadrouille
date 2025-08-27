@@ -19,6 +19,8 @@ import snorkeling from './snorkeling.jpg';
 import balancoire from './balancoire.jpg'; 
 import fiin from './fiin.jpg'; 
 import yellowbridge from './yellowbridge.jpg';
+import finnss from './finnss.jpg';
+
 
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -120,6 +122,20 @@ function Bali() {
    🏯Village d’Ubud, entre rizières et toits en terre cuite🌿
 </div>
 
+ <div className="bali-block" data-aos="fade-up">
+      <p>Ubud est une ville animée qui offre de nombreuses activités.
+    Je vous conseille d’y passer 2 à 3 jours afin de profiter des incontournables.</p> 
+</div>
+
+<div className="picture" data-aos="fade-up">
+    <img src={cretubud} alt="Bali plage" />
+</div>
+
+
+<div className="legend" >
+   Célebre complexe de Cretya Day Club
+</div>
+
 
 
 
@@ -145,8 +161,22 @@ function Bali() {
 
 
 <div className="bali-block" data-aos="fade-up">
+        <p> <strong> Ses plages de sable noir, façonnées par les volcans environnants, offrent un décor unique.</strong>
+        </p>
+</div>
+
+
+<div className="picture" data-aos="fade-up">
+    <img src={sablenoir} alt="Bali plage" />
+</div>
+
+<div className="legend" >
+    Plage de sable noir
+</div>
+
+
+<div className="bali-block" data-aos="fade-up">
         <p>
-           <strong> Ses plages de sable noir</strong>, façonnées par les volcans environnants, offrent un décor unique.
             Mais si Amed attire avant tout, c’est pour ses <em>fonds marins exceptionnels ainsi que pour ses tortues</em> : <strong>snorkeling</strong> et <strong>plongée sont ici rois</strong>.
             Parmi les spots incontournables, l’épave du Liberty. C'est un ancien navire américain qui repose à seulement quelques mètres du rivage, offrant un spectacle sous-marin inoubliable.🤿🐠
         </p>
@@ -186,7 +216,7 @@ function Bali() {
 </div>
 
 <div className="legend" >
-    🏄‍♂️ Spot de surf à Nusa Lembongan turquoise 🌴
+    🏄‍♂️ Spot de surf à Nusa Lembogan turquoise 🌴
 </div>
 
 <div className="bali-block" data-aos="fade-up">
@@ -220,7 +250,7 @@ function Bali() {
 </div>
 
 <div className="legend" >
-    🏝️ Plages paradisiaques de sable fin 🌊
+    Le célèbre pont de Nusa Lembogan
 </div>
 
 <div className="bali-block" data-aos="fade-up">
@@ -246,14 +276,14 @@ function Bali() {
 </div>
 
 <div className="legend" >
-    🏖️ Célèbre plage de Nusa Penida 🏖️
+    🏖️ Plage incontournable de kelingking Beach 🏖️
 </div>
 
 
 
 <div className="bali-block" data-aos="fade-up">
         <p>
-        À faire absolument : depuis Nusa Lembongan, Profitant de la proximité des 2 îles,
+        ✅ À faire absolument ✅ Depuis Nusa Lembongan, Profitant de la proximité des 2 îles,
         il est possible de réserver une excursion à la journée pour découvrir les plus beaux spots de <strong>Nusa Penida</strong>.
         Le programme comprend généralement une session de <strong>snorkeling avec les raies manta</strong>, puis la visite de 3 à 4 lieux incontournables de l’île, avec un taxi qui vous récupère directement au port.
         La journée se termine par le retour sur Nusa Lembongan
@@ -263,6 +293,9 @@ function Bali() {
         nous avons choisi de revenir à Kuta, idéalement située à mi-chemin <strong>entre Canggu et Uluwatu</strong>.
         </p>
 </div>
+
+
+<h1>───Canggu───</h1> 
 
 <div className="picture" data-aos="fade-up">
     <img src={fiin} alt="Bali plage" />
@@ -277,6 +310,14 @@ function Bali() {
         Canggu est incontournable pour son ambiance branchée : on y trouve certains <em>des meilleurs beach clubs de Bali</em>,
          comme le <strong>célèbre Finns Beach Club</strong>, parfait pour siroter un cocktail face au coucher de soleil.
         </p>
+</div>
+
+<div className="picture" data-aos="fade-up">
+    <img src={finnss} alt="Bali plage" />
+</div>
+
+<div className="legend" >
+   The Finns Beach Club
 </div>
 
 
@@ -307,9 +348,10 @@ function Bali() {
 
     <p>
     Ici, on mange pour seulement quelques euros, alors je vous conseille de goûter à un maximum de plats.
-    Et si, comme moi, vous n’aimez pas la nourriture trop épicée, n’hésitez pas à le préciser : cela vous évitera quelques surprises.
-Je vous recommande aussi de tester des restaurants plus traditionnels.
- Parfois, surtout sur les petites îles, le “restaurant” est en réalité la maison de l’habitant… et la cuisine y est tout aussi délicieuse, voire plus authentique.
+    Et si, comme moi, vous n’aimez pas la nourriture trop épicée, n’hésitez pas à le préciser : cela vous évitera quelques surprises :) </p>
+
+    <p>Je vous recommande aussi de tester <strong>des restaurants plus traditionnels. </strong>
+    Parfois, surtout sur les petites îles, le “restaurant” est en réalité la maison de l’habitant… et la cuisine y est tout aussi délicieuse, voire plus authentique.
     </p>
 </div>
 
@@ -328,7 +370,8 @@ Dégustation de fruits locaux
     <h1>❋❋ Mes ressentis sur Bali ❋❋</h1>
         <p>
         <em>Bali était pour moi mon premier voyage en Asie.</em>
-        Je n’avais pas de point de comparaison à l’époque, mais maintenant, après avoir découvert la Thaïlande, je peux dire que Bali reste mon coup de cœur… et l’est encore aujourd’hui.
+        Je n’avais pas de point de comparaison à l’époque, mais maintenant, après avoir découvert la Thaïlande, je peux dire que Bali reste mon coup de cœur… et l’est encore aujourd’hui.</p>
+        <p>
         Un véritable coup de cœur pour tout ce qu’elle représente : 
         <strong> la diversité de ses paysages, la gentillesse de ses habitants, ce sentiment de liberté et de vacances permanentes,
         et ce “mood” surf omniprésent sur l’île.</strong>
@@ -337,7 +380,7 @@ Dégustation de fruits locaux
         <p>
         <em>Côté points négatifs</em>, je dirais surtout <strong>les trajets</strong> : les distances se mesurent moins en kilomètres qu’en heures...
         On peut facilement mettre 1h30 à 2h pour parcourir seulement 20 kilomètres.
-        Certains reprochent aussi à l’île de devenir trop superficielle, trop “instagrammable”, mais personnellement, cela ne m’a pas dérangé.
+        Certains reprochent aussi à l’île de devenir trop superficielle, trop “instagrammable”, mais personnellement, cela ne m’a pas dérangé :)
         </p>
 </div>
 
@@ -355,22 +398,22 @@ Dégustation de fruits locaux
     <h1>▸▸Conseils pratiques◂◂</h1>
 
     <p>
-    Si j’avais un conseil à donner pour Bali : restez environ deux jours dans chaque endroit afin de varier les découvertes,
+    📍 Si j’avais un conseil à donner pour Bali : restez environ deux jours dans chaque endroit afin de varier les découvertes,
     puis profitez un peu plus longtemps d’une île comme Nusa Lembongan !
     </p>
 
     <p>
-    Meilleure période : d’avril à octobre (saison sèche)☀️🌡️.
+    📍 Meilleure période : d’avril à octobre (saison sèche)☀️🌡️.
     </p>
 
     <p>
-    Transport : installez l’application Grab. Le scooter reste la meilleure option pour se déplacer🛵,
+    📍 Transport : installez l’application Grab. Le scooter reste la meilleure option pour se déplacer🛵,
     sauf pour les longs trajets comme rejoindre Amed ou Ubud,
     où il vaut mieux opter pour un chauffeur🚗. Attention toutefois à la circulation⚠️!    
     </p>
 
     <p>
-💶Budget : on peut vivre très confortablement avec 25 à 50 € par jour, selon son style de voyage.    
+📍 Budget💶 : on peut vivre très confortablement avec 25 à 50 € par jour, selon son style de voyage.    
     </p>
 
 </div>

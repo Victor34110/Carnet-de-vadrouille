@@ -1,65 +1,53 @@
-.App-header {                     /* photo-backgrand */
-  position: relative;             /* Nécessaire pour que l’overlay */
+.App-header {
+  position: relative;
   background-image: url('./palmier-bali.jpeg');
-  background-size: cover;         /* L’image prend toute la taille */
-  background-position: center;    /* L’image est centrée */
-  background-repeat: no-repeat;   
-  min-height: 100vh;              /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 100px 20px;            /* Espace intérieur :  haut/bas, gauche/droite */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 20px; /* seulement à gauche/droite */
 }
 
-  .overlay-app {          /* Calque sombre */
-  position: absolute;    /* Positionnement absolu par rapport à .thailande-container */
+.overlay-app {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 29, 29, 0.725); /* teinte du calque */
-  z-index: 1; /* derrière */
+  background-color: rgba(11, 15, 16, 0.619); /* calque sombre */
+  z-index: 1;         /* derrière le contenu */
 }
 
-.title-app {   /* titre */
-
-  z-index: 2;       /* important à mettre quand on veut que c' soit au dessus */
-  color: rgb(224, 110, 110);
-  font-size: 64px;
-  text-shadow: 2px 2px 5px rgb(176, 12, 12); 
+.title-app {
+  z-index: 2;
+  color: rgb(221, 151, 0);
+  font-size: 65px;
   text-align: center;
   font-style: italic;
-  margin-top: 0px
-  
+  margin-top: -170px;  /* règle la distance par rapport au haut du header */
+  margin-bottom: 120px; /* espace avec le sous-titre */
 }
 
-.subtitle-app {  /* sous-titre */
-  z-index: 2; 
-  margin:  50px 0;
-  text-align: center;
-  color: rgb(255, 254, 254);
+.subtitle-app {
+  z-index: 2;
   font-size: 25px;
-  padding: 80px;  /*espacement entre lui et le home-content*/
-}
-
-  .home-content-app {  /* encadrement */
-  
-  z-index: 2; 
-  max-width: 1500px;      /* Largeur maximale du texte */
-  width: 90%;             /* Option pour etre responsive et large */
-  text-align: justify;    /* Texte justifié */
-  background: rgba(165, 165, 165, 0.397); /* couleur de l'encadrement*/
-  padding: 30px 40px;
-  border-radius: 20px;
-   margin: 50px;
-  
+  text-align: center;
+  color: rgba(221, 151, 0, 0.8);
+  font-style: italic;
+  margin-top: 40px;   /* espace au-dessus si tu veux */
+  margin-bottom: 60px; /* espace en dessous si tu veux */
 }
 
 .main-text {
-  
-  color: rgb(255, 255, 255);
-  font-size: 25px;
- /*  padding: 60px; */
- 
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  z-index: 2;
+  text-align: center;
+ margin-top: 160px;   /* espace au-dessus si tu veux */
+ margin-bottom: -150px; /* espace en dessous si tu veux */
 }
