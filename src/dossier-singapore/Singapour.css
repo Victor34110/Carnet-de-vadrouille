@@ -1,0 +1,66 @@
+.singapore-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.singapore-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.singapore-text h1 {
+  font-size: 48px;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+.subtitle-app-sing {
+
+  font-size: 25px;
+  text-align: center;
+  color: rgba(44, 3, 251, 0.8);
+  font-style: italic;
+  margin-top: 40px;   /* espace au-dessus*/
+  margin-bottom: 60px; /* espace en dessous*/
+}
+
+.singapore-text p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* Zone du slider */
+.singapore-slider {
+  position: relative;
+  padding: 40px 0 50px; /*pagination */
+}
+
+/* Taille du viewport du slider */
+.coverflow-swiper {
+  width: 50%;
+}
+
+/* Chaque slide : largeur auto pour coverflow */
+.coverflow-slide {
+  width: 240px; /*taille globale des slides*/
+  height: 650px; /* hauteur des slides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverflow-slide img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;     /* remplissage */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(210, 204, 204, 0.659);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coverflow-slide {
+    width: 200px;
+    height: 300px;
+  }
+}

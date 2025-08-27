@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import Destination from './destination';
 import Thailande from './dossier-thailande/Thailande';
 import Bali from './dossier-bali/Bali';
+import Singapour from './dossier-singapore/Singapour';
 import Contact from './Contact';
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
         <Route path="/thailande" element={<Thailande />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Bali" element={<Bali />}/>
+        <Route path="/Singapour" element={<Singapour/>}/>
+        
       </Routes>
     </BrowserRouter>
   );
