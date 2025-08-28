@@ -28,8 +28,8 @@
   font-size: 65px;
   text-align: center;
   font-style: italic;
-  margin-top: -170px;  /* règle la distance par rapport au haut du header */
-  margin-bottom: 120px; /* espace avec le sous-titre */
+  margin-top: 0px;  /* règle la distance par rapport au haut du header */
+  margin-bottom: 100px; /* espace avec le sous-titre */
 }
 
 .subtitle-app {
@@ -39,7 +39,7 @@
   color: rgba(221, 151, 0, 0.8);
   font-style: italic;
   margin-top: 40px;   /* espace au-dessus si tu veux */
-  margin-bottom: 60px; /* espace en dessous si tu veux */
+  margin-bottom: 30px; /* espace en dessous si tu veux */
 }
 
 .main-text {
@@ -48,6 +48,6 @@
   font-style: italic;
   z-index: 2;
   text-align: center;
- margin-top: 160px;   /* espace au-dessus si tu veux */
- margin-bottom: -150px; /* espace en dessous si tu veux */
+ margin-top: 30px;   /* espace au-dessus si tu veux */
+ margin-bottom: 20px; /* espace en dessous si tu veux */
 }

@@ -24,7 +24,7 @@ useEffect(() => {
     <div className="premiere-section">
       <div className="overlay"></div>
 
-      <div className="content">
+      <div className="content" data-aos="fade-up">
         <h1 className="thailande-title">🌴 Vlog Thaïlande 🌴</h1>
 
 
@@ -54,7 +54,7 @@ useEffect(() => {
       <div className="deuxieme-section">
         <div className="overlay-2"></div>
 
-      <div className="texte-itineraire">
+      <div className="texte-itineraire" data-aos="fade-up">
         
         <h1>Notre itinéraire en Thaïlande 🏝️</h1>
        
@@ -86,7 +86,7 @@ useEffect(() => {
       <div className="troisieme-section">
       <div className="overlay-3"></div>
 
-      <div className="texte-bangkok">
+      <div className="texte-bangkok" data-aos="fade-up">
 
       <h1>Villes visitées & activités </h1>
       <h2>1. Bangkok</h2>
@@ -115,7 +115,7 @@ useEffect(() => {
   </div> 
 
    
-    <img src={bangkok4} alt="Marché flottant" className="photo4" />   {/* pour photo placé ou on veut */}
+    
     <img src={bangkok5} alt="Photo Bangkok 5" className="photo5" />
 
   </div>   
@@ -131,7 +131,7 @@ useEffect(() => {
 
         <div className="overlay-4"></div>
       
-      <div className="texte-ao-nang">
+      <div className="texte-ao-nang"  data-aos="fade-up">
     <h2>2. Ao Nang / Railay</h2>
 
     <p><strong>Ao Nang </strong> se situe à une <strong> vingtaine </strong> de kilomètres de <strong> Krabi </strong>. Moins surpeuplée que Phuket, 
@@ -169,7 +169,7 @@ useEffect(() => {
 
 <div className="cinquieme-section">
   <div className="overlay-5"></div>
-    <div className="texte-koh-phiphi">
+    <div className="texte-koh-phiphi" data-aos="fade-up">
  
     <h2>3. Koh Phi Phi</h2>
 

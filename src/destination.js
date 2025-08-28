@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Destination() {
   return (
     <div className="destination-container">
-      <h1 className="destination-title">Destination :</h1>
+      <h1 className="destination-title">Destinations :</h1>
 
 
       <div className="cards-container">  {/* Petites cases  */}

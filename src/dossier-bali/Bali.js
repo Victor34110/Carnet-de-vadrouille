@@ -38,7 +38,7 @@ function Bali() {
     <div className="bali-container">
 
 <div className="title-bali" data-aos="fade-up">
-   🏝️ BALI 🏝️
+  🏝️ BALI 🏝️
 </div>
 
 

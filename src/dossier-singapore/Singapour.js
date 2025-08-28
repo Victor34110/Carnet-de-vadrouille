@@ -1,7 +1,7 @@
 import React from "react";
 import "./Singapour.css";
 
-// 👉 Images (exemples)
+
 import airport from "./airport.jpeg";
 import capsule from "./capsule.jpeg";
 import fondsingapourr from "./fondsingapourr.jpg";
@@ -13,11 +13,11 @@ import restaurant from "./restaurant.jpeg";
 import towers from "./towers.jpeg";
 import gardens from "./gardens.jpeg";
 
-// 👉 Swiper
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
 
-// 👉 Styles Swiper
+
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";

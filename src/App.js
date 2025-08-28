@@ -9,7 +9,9 @@ import Destination from './destination';
 import Thailande from './dossier-thailande/Thailande';
 import Bali from './dossier-bali/Bali';
 import Singapour from './dossier-singapore/Singapour';
+import Australie from './dossier-australie/Australie';
 import Contact from './Contact';
+
 
 function App() {
   useEffect(() => { /* effet de texte*/
@@ -24,7 +26,7 @@ function App() {
 
       <nav style={{ padding: '12px', backgroundColor: '#040405ff' }}>    {/* Calque sombre  */}  
         <Link to="/" style={{ color: 'white', marginRight: '15px' }}>Accueil</Link>  
-        <Link to="/destination" style={{ color: 'white', marginRight: '15px' }}>Destination</Link>
+        <Link to="/destination" style={{ color: 'white', marginRight: '15px' }}>Destinations</Link>
         <Link to="/Contact" style={{ color: 'white' }}>Contact</Link>
       </nav>
 
@@ -59,7 +61,8 @@ function App() {
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Bali" element={<Bali />}/>
         <Route path="/Singapour" element={<Singapour/>}/>
-        
+        <Route path="/Australie" element={<Australie/>}/>
+
       </Routes>
     </BrowserRouter>
   );
