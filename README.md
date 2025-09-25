@@ -9,7 +9,7 @@ J'integre **Epitech**, une école d'informatique à Montpellier en alternance, d
 
 ---
 
-Pour ce projet, j’ai utilisé ChatGPT comme un guide d’apprentissage : il m’a aidé à comprendre les étapes à suivre, à corriger mes erreurs et à explorer différentes façons de faire.
+Pour ce projet, j’ai utilisé une IA comme un guide d’apprentissage : il m’a aidé à comprendre les étapes à suivre, à corriger mes erreurs et à explorer différentes façons de faire.
 Je ne l’ai pas utilisé pour bâcler le travail, mais au contraire **pour apprendre**, **progresser pas à pas** et **gagner en autonomie** dans le dev.
 
 🛠 J’ai appris à utiliser React, à intégrer des pages, des photos, des styles, et surtout à structurer un projet complet…
