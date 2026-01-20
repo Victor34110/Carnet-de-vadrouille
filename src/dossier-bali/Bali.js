@@ -2,24 +2,24 @@ import React from 'react';
 import './Bali.css';
 
 
-import lembogan from './lembogan.jpg'; 
-import amed from './amed.jpg'; 
-import card from './card.png'; 
-import cretubud from './cretaubud.jpg'; 
-import kastara from './kastara.jpg'; 
-import kuta from './kuta.jpg'; 
-import penida from './penida.jpg'; 
-import plagelembogan from './plagelembogan.jpg'; 
-import sablenoir from './sablenoir.jpg'; 
-import surflembogan from './surflembogan.jpg'; 
-import ubudvillage from './ubudvillage.jpg'; 
-import uluwatu from './uluwatu.jpg'; 
-import fruit from './fruit.jpg'; 
-import snorkeling from './snorkeling.jpg'; 
-import balancoire from './balancoire.jpg'; 
-import fiin from './fiin.jpg'; 
-import yellowbridge from './yellowbridge.jpg';
-import finnss from './finnss.jpg';
+import lembogan from './pictures/lembogan.jpg'; 
+import amed from './pictures/amed.jpg'; 
+import card from './pictures/card.png'; 
+import cretubud from './pictures/cretaubud.jpg'; 
+import kastara from './pictures/kastara.jpg'; 
+import kuta from './pictures/kuta.jpg'; 
+import penida from './pictures/penida.jpg'; 
+import plagelembogan from './pictures/plagelembogan.jpg'; 
+import sablenoir from './pictures/sablenoir.jpg'; 
+import surflembogan from './pictures/surflembogan.jpg'; 
+import ubudvillage from './pictures/ubudvillage.jpg'; 
+import uluwatu from './pictures/uluwatu.jpg'; 
+import fruit from './pictures/fruit.jpg'; 
+import snorkeling from './pictures/snorkeling.jpg'; 
+import balancoire from './pictures/balancoire.jpg'; 
+import fiin from './pictures/fiin.jpg'; 
+import yellowbridge from './pictures/yellowbridge.jpg';
+import finnss from './pictures/finnss.jpg';
 
 
 import { useEffect } from 'react';

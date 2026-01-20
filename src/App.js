@@ -23,12 +23,17 @@ function App() {
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>  {/* Calque sombre  */}
+<nav className="navbar">
+  <div className="navbar__inner">
+    <Link to="/" className="navbar__brand">Carnet de Vadrouille</Link>
 
-      <nav style={{ padding: '12px', backgroundColor: '#040405ff' }}>    {/* Calque sombre  */}  
-        <Link to="/" style={{ color: 'white', marginRight: '15px' }}>Accueil</Link>  
-        <Link to="/destination" style={{ color: 'white', marginRight: '15px' }}>Destinations</Link>
-        <Link to="/Contact" style={{ color: 'white' }}>Contact</Link>
-      </nav>
+    <div className="navbar__links">
+      <Link to="/" className="navbar__link">Accueil</Link>
+      <Link to="/destination" className="navbar__link">Destinations</Link>
+      <Link to="/Contact" className="navbar__link navbar__cta">Contact</Link>
+    </div>
+  </div>
+</nav>
 
       <Routes>
         <Route path="/" element={

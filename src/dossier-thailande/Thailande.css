@@ -1,6 +1,6 @@
 .premiere-section {
-  position: relative;                            /* pour l’overlay  */
-  background-image: url('./sunsetthai.jpg');
+  position: relative;                            /* pour l'overlay  */
+  background-image: url('./pictures/sunsetthai.jpg');
   background-size: cover;                        /* L’image prend toute la taille */
   background-position: center;                   /* L’image est centrée */
   background-repeat: no-repeat;                  /* Pas de répétition de l’image */
@@ -60,8 +60,8 @@
 
 
 .deuxieme-section {
-  position: relative;                  /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
-  background-image: url('./2.jpg');
+  position: relative;                  /* Nécessaire pour que l'overlay soit positionné par rapport à lui */
+  background-image: url('./pictures/2.jpg');
   background-size: cover;              /* L’image prend toute la taille du conteneur */
   background-position: center;         
   background-repeat: no-repeat;        
@@ -109,7 +109,7 @@
 
 .troisieme-section {
   position: relative;                           
-  background-image: url('./bangkok4.jpg');
+  background-image: url('./pictures/bangkok4.jpg');
   background-size: cover;                       
   background-position: center;                  
   background-repeat: no-repeat;                 
@@ -184,7 +184,7 @@
 
 .quatrieme-section {
   position: relative; 
-  background-image: url('./mangrove.jpg');
+  background-image: url('./pictures/mangrove.jpg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -223,7 +223,7 @@
 
 .cinquieme-section {
   position: relative; 
-  background-image: url('./koh-phi-phi.jpg');
+  background-image: url('./pictures/koh-phi-phi.jpg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -262,7 +262,7 @@
       
 .sixieme-section {
   position: relative; 
-  background-image: url('./koh-lanta1.jpg');
+  background-image: url('./pictures/koh-lanta1.jpg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 

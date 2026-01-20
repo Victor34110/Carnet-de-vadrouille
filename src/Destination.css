@@ -1,7 +1,7 @@
 .destination-container {
   position: relative;                        
 
-  background-image: url('./dossier-thailande/vatika.jpg'); 
+  background-image: url('./dossier-thailande/pictures/vatika.jpg'); 
   background-size: cover;                    /* L’image prend toute la largeur/hauteur */
   background-position: center;           
   background-repeat: no-repeat;              /* Ne répète pas l’image  */
@@ -58,28 +58,28 @@
 }
 
 .card.thailande {
-  background-image: url('./dossier-thailande/fondthailande.jpg'); 
+  background-image: url('./dossier-thailande/pictures/fondthailande.jpg'); 
   background-size: cover;
   background-position: 30% 65%;
 }
 
 
 .card.bali {
-  background-image: url('./dossier-thailande/fondbali.jpg'); 
+  background-image: url('./dossier-thailande/pictures/fondbali.jpg'); 
   background-size: cover;
   background-position: 70% 80%;
 }
 
 
 .card.australie {
-  background-image: url('./dossier-thailande/fondaustralie.jpg'); 
+  background-image: url('./dossier-thailande/pictures/fondaustralie.jpg'); 
   background-size: cover;
   background-position: 70% 65%;
 }
 
 
 .card.singapour {
-  background-image: url('./dossier-thailande/fondsingapour.jpg'); 
+  background-image: url('./dossier-thailande/pictures/fondsingapour.jpg'); 
   background-size: cover;
   background-position: 70% 20%;
 }

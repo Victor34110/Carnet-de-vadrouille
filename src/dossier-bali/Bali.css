@@ -5,6 +5,7 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #000000;
 }
 
 /*  TITRE PRINCIPAL  */
@@ -15,7 +16,7 @@
   font-size: 50px;
   font-weight: bold;
   margin: 60px 0;
-  color: #1a1a1a;
+  color: #ffffff;
   
 }
 
@@ -28,6 +29,7 @@
 
 .bali-block p {
   margin-bottom: 40px;
+  color: white;
 }
 
 /*  IMAGES  */
@@ -57,7 +59,7 @@
   text-align: center;
   font-size: 18px;
   font-style: italic;
-  color: #666;
+  color: white;
   margin-top: 8px;
 }
 
@@ -65,6 +67,8 @@
 .bali-block-list ul {
   margin: 20px 0;
   padding-left: 30px;
+  color: white;
+
 }
 
 .bali-block-list li {
@@ -77,7 +81,8 @@ h1 {
   font-family: 'Georgia', serif;   
   font-style: italic;              
   font-size: 48px;                 
-  color: #2c2c2c;                  
+   color: white;
+                
   margin-top: 200px;              
   margin-bottom: 50px;             /* espace en-dessous */
   text-align: center;              /* centre le titre */

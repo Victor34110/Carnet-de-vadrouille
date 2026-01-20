@@ -2,16 +2,16 @@ import React from "react";
 import "./Singapour.css";
 
 
-import airport from "./airport.jpeg";
-import capsule from "./capsule.jpeg";
-import fondsingapourr from "./fondsingapourr.jpg";
-import lv from "./louis-vuitton.jpg";
-import marina from "./marina.jpeg";
-import merlion from "./merlion.jpeg";
-import pool from "./pool.jpeg";
-import restaurant from "./restaurant.jpeg";
-import towers from "./towers.jpeg";
-import gardens from "./gardens.jpeg";
+import airport from "./pictures/airport.jpeg";
+import capsule from "./pictures/capsule.jpeg";
+import fondsingapourr from "./pictures/fondsingapourr.jpg";
+import lv from "./pictures/louis-vuitton.jpg";
+import marina from "./pictures/marina.jpeg";
+import merlion from "./pictures/merlion.jpeg";
+import pool from "./pictures/pool.jpeg";
+import restaurant from "./pictures/restaurant.jpeg";
+import towers from "./pictures/towers.jpeg";
+import gardens from "./pictures/gardens.jpeg";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";

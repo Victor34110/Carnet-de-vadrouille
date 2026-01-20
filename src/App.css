@@ -12,6 +12,65 @@
   padding: 0 20px; /* seulement à gauche/droite */
 }
 
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(4,4,5,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.navbar__brand{
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.navbar__links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__link{
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: 0.2s ease;
+}
+
+.navbar__link:hover{
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Bouton "Contact" un peu plus visible */
+.navbar__cta{
+  color: #0b0b0c;
+  background: linear-gradient(135deg, #f15d08, #e6aa06);
+  font-weight: 800;
+}
+
+.navbar__cta:hover{
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #e68244, #e9b937);
+}
+
+
 .overlay-app {
   position: absolute;
   top: 0;

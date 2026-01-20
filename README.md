@@ -1,31 +1,91 @@
-# Carnet de Vadrouille🌍
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=2ea043&height=170&section=header&text=Carnet%20de%20Vadrouille%20🌍&fontSize=38&fontColor=ffffff&animation=fadeIn" />
+</p>
 
-Bienvenue sur mon tout premier projet web réalisé en auto-formation, nommé **mon Carnet de Vadrouille**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-Personal%20Website-2ea043?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/React-JSX-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/CSS-Design-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+</p>
 
-💡 J’ai voulu commencé mon apprentissage avec un projet qui me tenait vraiment à coeur, combinant **ma passion du voyage**, **mes souvenirs** et surtout ma volonté de me **former au développement web**.
+<h1 align="center">🌍 Carnet de Vadrouille</h1>
 
-En effet, issu d'une formation en **électronique et objets connctés**, et pratiquant le langage c, je me dirige cette année vers un nouveau language: le HTML.
-J'integre **Epitech**, une école d'informatique à Montpellier en alternance, dans le but de devenir developpeur web.
+<p align="center">
+  <b>Mon tout premier projet web en auto-formation, entre passion du voyage et apprentissage du dev.</b>
+</p>
+
+<p align="center">
+  🔗 <a href="https://victor34110.github.io/Carnet-de-vadrouille" target="_blank"><b>Voir le site</b></a>
+</p>
 
 ---
 
-Pour ce projet, j’ai utilisé une IA comme un guide d’apprentissage : il m’a aidé à comprendre les étapes à suivre, à corriger mes erreurs et à explorer différentes façons de faire.
-Je ne l’ai pas utilisé pour bâcler le travail, mais au contraire **pour apprendre**, **progresser pas à pas** et **gagner en autonomie** dans le dev.
+## 🎯 À propos
 
-🛠 J’ai appris à utiliser React, à intégrer des pages, des photos, des styles, et surtout à structurer un projet complet…
-Ce projet m’a permis d'apprendre les bases tout en créant quelque chose qui me ressemble.☀️
+Bienvenue sur **mon Carnet de Vadrouille** 🧳✨  
+C’est mon tout premier projet web réalisé en auto-formation, créé pour mélanger :
+
+- 🌍 ma passion du voyage  
+- 📸 mes souvenirs  
+- 💻 mon envie de progresser en développement web  
+
+Issu d’une formation en **électronique et objets connectés**, avec de bonnes bases en **C**, j’ai décidé de découvrir un nouvel univers : le **développement web**.
+
+Aujourd’hui, j’intègre **Epitech Montpellier** (en alternance), avec l’objectif de devenir **développeur web**.
 
 ---
 
-🎯 Je depose ici, ce projet, dans l'espoir qu'il soit lu et analisé par **de potentielles entreprises** ainsi qu'à **recevoir des conseils**, car je suis qu'au début de mon apprentissage. Et si, en plus, je peux apporter quelques tips pour vos futurs, voyages ce sera un plus!😁
+## 🛠️ Technologies utilisées
 
+- ⚛️ **React** (JavaScript / JSX)
+- 🟨 **JavaScript ES6**
+- 🎨 **CSS**
+- 🧩 **React Icons**
+- 🚀 Déploiement via **GitHub Pages**
 
+---
 
-## 🔧 En cours
-Le site est toujours en développement : je continue à l’améliorer et à l’enrichir (textes,photos, animations, etc.).
+## 🛠️ Ce que j’ai appris
 
-## ✨ Merci de votre visite !
+Grâce à ce projet, j’ai pu apprendre et pratiquer :
 
-**📎-- Lien du site --📎**  https://victor34110.github.io/Carnet-de-vadrouille
+- ⚛️ composants React, pages et navigation
+- 🎨 mise en page / overlay / styles
+- 🗂️ structuration d’un projet front complet
+- 📷 intégration de contenus (photos, sections, etc.)
 
-VICTOR GALIAN
+---
+
+## 🚧 Projet en cours
+
+Le site est encore en développement :  
+je continue à l’améliorer (textes, photos, animations, mise en forme, etc.) ☀️
+
+---
+
+## 💬 Pourquoi ce repo ?
+
+Je partage ce projet dans l’espoir qu’il soit lu et analysé par :
+
+- 🏢 de potentielles entreprises  
+- 👨‍💻 des développeurs qui pourraient me donner des conseils  
+
+Et si au passage je peux donner quelques idées de voyages… c’est un bonus 😄
+
+---
+
+## 🔗 Lien du site
+
+✅ https://victor34110.github.io/Carnet-de-vadrouille
+
+---
+
+## 👤 Auteur
+
+**Victor GALIAN**
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=2ea043&height=120&section=footer" />
+</p>
+

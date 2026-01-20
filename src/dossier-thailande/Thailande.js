@@ -1,8 +1,8 @@
 import React from 'react';
 import './Thailande.css';
 
-import bangkok4 from './bangkok4.jpg';  /* photo Bangkok1 */
-import bangkok5 from './bangkok5.jpg';  /* photo Bangkok2 */
+import bangkok4 from './pictures/bangkok4.jpg';  /* photo Bangkok1 */
+import bangkok5 from './pictures/bangkok5.jpg';  /* photo Bangkok2 */
 
 import { useEffect } from 'react';
 import AOS from 'aos';

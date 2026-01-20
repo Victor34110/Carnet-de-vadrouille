@@ -1,0 +1,1 @@
+npm start pour start le projet
