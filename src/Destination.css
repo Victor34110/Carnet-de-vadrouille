@@ -1,87 +1,175 @@
-.destination-container {
-  position: relative;                        
+    /* Page */
 
-  background-image: url('./dossier-thailande/pictures/vatika.jpg'); 
-  background-size: cover;                    /* L’image prend toute la largeur/hauteur */
-  background-position: center;           
-  background-repeat: no-repeat;              /* Ne répète pas l’image  */
-  min-height: 100vh;                         /* Hauteur = 100% de la hauteur de l'écran */
-
-  display: flex;                             
-  flex-direction: column;               
-  align-items: center;                       /* Centre horizontalement */
-  padding-top: 50px;                        /* Espacement entre titre et haut de page */
-  z-index: 0;                                
+.destination-container{
+  position: relative;
+  min-height: 100vh;
+  padding: 72px 20px 56px;
+  display: grid;
+  place-items: start center;
+  background-image: url('./dossier-thailande/pictures/vatika.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.destination-container::before {             
-  content: '';
+.destination-overlay{
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);    /* calque sombre semi-transparent */
-  z-index: -1;                               /* placé sous le contenu */
+  inset: 0;
+  background:
+    radial-gradient(900px 500px at 50% 20%, rgba(0,0,0,0.25), rgba(0,0,0,0.75)),
+    linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.70));
+  z-index: 0;
 }
 
+    /* ---HEADER--- */
 
-.destination-title {
-  font-size: 64px;                       
-  color: white;                          
-  text-shadow: 2px 2px 8px black;            /* effet d’ombre */
-  margin-bottom: 60px;                         /* Espace entre le titre et les cases en dessous */
-  text-align: center;                          /* Centre le texte du titre */
+.destination-header{
+  position: relative;
+  z-index: 1;
+  width: min(980px, 100%);
+  text-align: center;
+  margin-bottom: 28px;
 }
 
-.cards-container {
-  display: flex;                               /* alignement */
-  flex-wrap: wrap;                             /* Permet aux cases d’aller à la ligne si trop nombreuses */
-  gap: 30px;                                   /* Espace horizontal ET vertical entre les cases */
-  justify-content: center;                     /* Centre les cases sur la ligne */
+.destination-title{
+  color: #fff;
+  font-size: clamp(34px, 4.2vw, 62px);
+  line-height: 1.05;
+  margin: 0 0 12px;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.45);
 }
 
-.card {
-  width: 250px;                                 /* Largeur chaque case */
-  height: 150px;                                /* Hauteur fixe */
-  border-radius: 12px;                          /* Coins arrondis */
-  text-decoration: none;                        /* Enlève le soulignement du lien */
-  color: white;                          
-  font-size: 24px;                     
-  font-weight: bold;                             /* Texte en gras */
-  display: flex;                                 /* Flex pour centrer le texte */
-  align-items: center;                           /* Centre verticalement le texte */
-  justify-content: center;                       /* Centre horizontalement le texte */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);   /* Ombre relief */
-  transition: transform 0.2s ease;               /* Animation douce lors du survol */
-}
-.card:hover {
-  transform: scale(1.05);                           /* Agrandit légèrement la case */
-  box-shadow: 0 8px 16px rgba(225, 35, 35, 0.4);  /* Ombre plus forte pour un effet "surélevé" */
+.destination-subtitle{
+  color: rgba(255,255,255,0.85);
+  font-size: clamp(15px, 1.7vw, 18px);
+  margin: 0 auto;
+  max-width: 760px;
 }
 
-.card.thailande {
-  background-image: url('./dossier-thailande/pictures/fondthailande.jpg'); 
+    /* ----GRID---- */
+
+.destination-grid{
+  position: relative;
+  z-index: 1;
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+    /* ---CARDS--- */
+
+.destination-Card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+
+  min-height: 220px;
+  padding: 18px;
+
+  border-radius: 18px;
+  text-decoration: none;
+  color: #fff;
+
   background-size: cover;
-  background-position: 30% 65%;
+  background-position: center;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+  overflow: hidden;
+
+  transform: translateY(0);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+/* effet overlay sur chaque carte */
+.destination-Card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.247) 65%);
+  z-index: 0;
+}
+.destination-Card:hover::before{
+  opacity: 0;  /*overlay invisible au passage de la souris*/
+}
+
+/* effet jolie*/
+.destination-Card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  z-index: 0;
 }
 
 
-.card.bali {
-  background-image: url('./dossier-thailande/pictures/fondbali.jpg'); 
-  background-size: cover;
-  background-position: 70% 80%;
+/* ----TEXTE SUR LA CARTE---- */
+
+.destination-Card-tag,
+.destination-Card-name,
+.destination-Card-secret{
+  position: relative;
+  z-index: 1;
 }
 
-
-.card.australie {
-  background-image: url('./dossier-thailande/pictures/fondaustralie.jpg'); 
-  background-size: cover;
-  background-position: 70% 65%;
+.destination-Card-tag{
+  align-self: flex-start;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.16);
+  backdrop-filter: blur(10px);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.3px;
 }
 
-
-.card.singapour {
-  background-image: url('./dossier-thailande/pictures/fondsingapour.jpg'); 
-  background-size: cover;
-  background-position: 70% 20%;
+.destination-Card-name{
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
+.destination-Card-secret{
+  color: rgba(255,255,255,0.88);
+  font-weight: 700;
+  opacity: 0.0;
+  transform: translateY(6px);
+  transition: 0.18s ease;
+}
 
+/* hover */
+.destination-Card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 26px 80px rgba(0,0,0,0.45);
+  filter: saturate(1.05);
+}
+
+.destination-Card:hover .destination-Card-secret{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Layout des cartes mode un peu mosaïque */
+.destination-Card--thailande{ grid-column: span 7; background-image: url('./dossier-thailande/pictures/fondthailande.jpg'); background-position: 30% 65%; }
+.destination-Card--australie{ grid-column: span 5; background-image: url('./dossier-thailande/pictures/fondaustralie.jpg'); background-position: 70% 65%; }
+.destination-Card--bali{ grid-column: span 5; background-image: url('./dossier-thailande/pictures/fondbali.jpg'); background-position: 70% 80%; }
+.destination-Card--singapour{ grid-column: span 7; background-image: url('./dossier-thailande/pictures/fondsingapour.jpg'); background-position: 70% 20%; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .destination-Card--thailande,
+  .destination-Card--australie,
+  .destination-Card--bali,
+  .destination-Card--singapour{
+    grid-column: span 12;
+  }
+  .destination-Card{
+    min-height: 210px;
+  }
+}

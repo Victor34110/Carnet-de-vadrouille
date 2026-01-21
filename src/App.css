@@ -1,15 +1,16 @@
+/* ========= HERO ========= */
+
 .App-header {
   position: relative;
   background-image: url('./palmier-bali.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px; /* seulement à gauche/droite */
+  min-height: calc(100vh - 56px);
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+  overflow: hidden;
 }
 
 .navbar{
@@ -21,7 +22,7 @@
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.navbar__inner{
+.navbar-container{
   max-width: 1100px;
   margin: 0 auto;
   padding: 12px 16px;
@@ -31,20 +32,20 @@
   gap: 16px;
 }
 
-.navbar__brand{
+.navbar-title{
   color: white;
   text-decoration: none;
   font-weight: 800;
   letter-spacing: 0.4px;
 }
 
-.navbar__links{
+.navbar-links{
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.navbar__link{
+.navbar-link{
   color: rgba(255,255,255,0.85);
   text-decoration: none;
   font-weight: 600;
@@ -53,60 +54,134 @@
   transition: 0.2s ease;
 }
 
-.navbar__link:hover{
+/*.navbar-link:hover{
   color: #fff;
   background: rgba(255,255,255,0.08);
-}
+}*/
 
-/* Bouton "Contact" un peu plus visible */
-.navbar__cta{
+/* Bouton "Contact" */
+.navbar-contact{
   color: #0b0b0c;
   background: linear-gradient(135deg, #f15d08, #e6aa06);
   font-weight: 800;
 }
 
-.navbar__cta:hover{
+.navbar-contact:hover{
   transform: translateY(-1px);
   background: linear-gradient(135deg, #e68244, #e9b937);
 }
 
 
+/* Overlay  */
 .overlay-app {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(11, 15, 16, 0.619); /* calque sombre */
-  z-index: 1;         /* derrière le contenu */
+  inset: 0;
+  background:
+    radial-gradient(1200px 600px at 50% 40%, rgba(0,0,0,0.20), rgba(0,0,0,0.75)),
+    linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.65));
+  z-index: 1;
 }
 
+/* Conteneur central */
+.hero {
+  position: relative;
+  z-index: 2;
+  width: min(980px, 100%);
+  text-align: center;
+  padding: 0 10px;
+}
+
+
+/* Titre */
 .title-app {
-  z-index: 2;
   color: rgb(221, 151, 0);
-  font-size: 65px;
+  font-size: clamp(34px, 4.2vw, 64px);
+  line-height: 1.05;
   text-align: center;
   font-style: italic;
-  margin-top: 0px;  /* règle la distance par rapport au haut du header */
-  margin-bottom: 100px; /* espace avec le sous-titre */
+  margin: 10px 0 18px;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.45);
 }
 
+/* Sous-titre  */
 .subtitle-app {
-  z-index: 2;
-  font-size: 25px;
+  font-size: clamp(16px, 2vw, 22px);
   text-align: center;
-  color: rgba(221, 151, 0, 0.8);
+  color: rgba(255, 236, 190, 0.92);
   font-style: italic;
-  margin-top: 40px;   /* espace au-dessus si tu veux */
-  margin-bottom: 30px; /* espace en dessous si tu veux */
+  margin: 0 auto 18px;
+  max-width: 780px;
 }
 
-.main-text {
-  color: #fff;
-  font-size: 20px;
+/* Carte gris foncée */
+.hero-card {
+  margin: 18px auto 0;
+  padding: 18px 18px;
+  border-radius: 18px;
+  background: rgba(10, 12, 14, 0.40);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  max-width: 860px;
+}
+
+/* Texte dans la carte */
+.hero-text {
+  color: rgba(255,255,255,0.92);
+  font-size: 18px;
   font-style: italic;
-  z-index: 2;
-  text-align: center;
- margin-top: 30px;   /* espace au-dessus si tu veux */
- margin-bottom: 20px; /* espace en dessous si tu veux */
+  line-height: 1.55;
+  margin: 10px 0;
+}
+
+.hero-text--muted {
+  color: rgba(255,255,255,0.78);
+}
+
+/* Boutons */
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 12px 16px;
+  border-radius: 14px;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+
+.hero-btn--left {
+  color: #0b0b0c;
+  background: linear-gradient(135deg, #f15d08, #e6aa06);
+}
+
+.hero-btn--left:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn--right {
+  color: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+.hero-btn--right:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.12);
+}
+
+
+/* Petite amélioration mobile */
+@media (max-width: 520px) {
+  .hero-kicker { font-size: 14px; }
+  .hero-card { padding: 14px; }
+  .hero-text { font-size: 16px; }
 }

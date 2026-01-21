@@ -1,70 +1,102 @@
 .main-contact {
-  position: relative; /* Nécessaire pour que l’overlay soit positionné par rapport à lui */
-  background-image: url('./fond-contact.jpg');
-  background-size: cover; /* L’image prend toute la taille du conteneur */
-  background-position: center -1200px; /* pour monter ou descendre la photo */
-  background-repeat: no-repeat; /* Pas de répétition de l’image */
-  min-height: 100vh; /* Hauteur minimum : 100% de la hauteur de l'écran */
-  padding: 40px 100px; /* Espace intérieur : 100px en haut/bas, 20px à gauche/droite */
-  display: block;
-  
-  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 70px 18px 60px;
 }
 
-  .overlay-contact {  /* fond */
-  position: absolute; /* Positionnement absolu par rapport à .thailande-container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.799); /* teinte du fond */
+.overlay-contact {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
   z-index: 1;
 }
 
-
-.Contact-title { 
-  position: relative; /* Pour que le z-index fonctionne */
+/* Conteneur centré */
+.contact-inner{
+  position: relative;
   z-index: 2;
-  margin-top:  40px;
-  font-size: 60px;
+  width: min(760px, 100%);
+  margin: 0 auto;
   text-align: center;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.26); 
-  font-style: italic;
-
 }
 
+/* Titre */
+.Contact-title {
+  margin: 10px 0 8px;
+  font-size: clamp(34px, 4vw, 60px);
+  color: #fff;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  font-style: italic;
+}
+
+/* Sous-texte */
+.contact-subtitle{
+  margin: 0 auto 18px;
+  color: rgba(255,255,255,0.82);
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 620px;
+}
+
+/* Liste */
 .contact-list {
-  position: relative; /* pour activer z-index */
-  z-index: 2;         /* plus haut que l'overlay */
   list-style: none;
   padding: 0;
-  margin-top: 120px;  /* descendre les puces */
-  text-align: center;
+  margin: 28px auto 0;
+  display: grid;
+  gap: 14px;
 }
 
-.contact-list li {
-  margin: 30px 0; /* espacement des puces */
-  font-size: 25px; /* taille de la police */
-}
-
+/* Lien en mode "ligne" */
 .contact-list a {
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.505); 
   text-decoration: none;
-  display: inline-flex;
+  color: rgba(255,255,255,0.92);
+
+  display: flex;
   align-items: center;
-  gap: 10px;    /* espacement entre les logo et le texte */
-  transition: transform 0.3s ease;
+  gap: 12px;
+
+  padding: 14px 14px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
 }
 
 .contact-list a:hover {
-  transform: scale(1.1);
-  text-shadow: 1px 1px 3px #000000;
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.18);
 }
 
+/* Icon */
 .icon {
-  font-size: 40px;
+  font-size: 26px;
 }
 
+/* Texte du lien */
+.contact-text{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* Flèche à droite */
+.contact-arrow{
+  margin-left: auto;
+  color: rgba(255,255,255,0.75);
+  font-weight: 900;
+}
+
+/* Desktop */
+@media (min-width: 1100px){
+  .main-contact{
+    background-position: center -1200px;
+  }
+}
