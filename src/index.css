@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,12 +10,31 @@ code {
     monospace;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* empêche le scroll horizontal / bande blanche */
+em,
+i {
+  font-style: normal;
+  font-weight: 700;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box; /* évite que padding dépassent la largeur */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: auto;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

@@ -1,150 +1,156 @@
-/* ========= HERO ========= */
-
 .App-header {
   position: relative;
-  background-image: url('./palmier-bali.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: calc(100vh - 56px);
+  background: #F8F6F0;
+  height: calc(100vh - 56px);
+  padding: 40px 20px;
+  overflow: hidden;
   display: grid;
   place-items: center;
-  padding: 48px 20px;
-  overflow: hidden;
-}
 
-.navbar{
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(4,4,5,0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.navbar-container{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.navbar-title{
-  color: white;
-  text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.4px;
-}
-
-.navbar-links{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar-link{
-  color: rgba(255,255,255,0.85);
-  text-decoration: none;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 12px;
-  transition: 0.2s ease;
-}
-
-/*.navbar-link:hover{
-  color: #fff;
-  background: rgba(255,255,255,0.08);
-}*/
-
-/* Bouton "Contact" */
-.navbar-contact{
-  color: #0b0b0c;
-  background: linear-gradient(135deg, #f15d08, #e6aa06);
-  font-weight: 800;
-}
-
-.navbar-contact:hover{
-  transform: translateY(-1px);
-  background: linear-gradient(135deg, #e68244, #e9b937);
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(200, 180, 150, 0.1) 19px, rgba(200, 180, 150, 0.1) 20px),
+    repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(200, 180, 150, 0.1) 19px, rgba(200, 180, 150, 0.1) 20px);
 }
 
 
-/* Overlay  */
-.overlay-app {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(1200px 600px at 50% 40%, rgba(0,0,0,0.20), rgba(0,0,0,0.75)),
-    linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.65));
-  z-index: 1;
-}
-
-/* Conteneur central */
-.hero {
+.hero{
   position: relative;
   z-index: 2;
-  width: min(980px, 100%);
-  text-align: center;
-  padding: 0 10px;
+  width: min(1200px, 95%);
+  padding: 20px;
+  background: #FFFDF8;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(139, 115, 85, 0.2);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+
 }
 
 
-/* Titre */
+.pushpin {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #C9A875, #A88D60);
+  border-radius: 50%;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4);
+  z-index: 10;
+}
+
+.pushpin::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: #8B7355;
+  border-radius: 50%;
+}
+
+
+.polaroid-photo {
+  width: min(280px, 90%);
+  margin: 0 auto;
+  background: #fff;
+  padding: 12px 12px 40px 12px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  transform: rotate(-2deg);
+  position: relative;
+ 
+
+}
+
+.polaroid-photo img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid-caption {
+  margin-top: 12px;
+  font-family: 'Permanent Marker', 'Comic Sans MS', cursive;
+  font-size: 16px;
+  color: #5D4E37;
+  text-align: center;
+  transform: rotate(-1deg);
+}
+
+
+
+
 .title-app {
-  color: rgb(221, 151, 0);
-  font-size: clamp(34px, 4.2vw, 64px);
-  line-height: 1.05;
+  color: #3D3027;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.15;
   text-align: center;
-  font-style: italic;
-  margin: 10px 0 18px;
-  text-shadow: 0 6px 30px rgba(0,0,0,0.45);
+  justify-self: center;
+  align-self: center ;
+  font-family: 'Brush Script MT', 'Segoe Script', cursive;
+  margin: 0 0 15px;
+  text-shadow: 2px 2px 0px rgba(212, 165, 116, 0.2);
+  letter-spacing: 1px;
+
 }
 
-/* Sous-titre  */
-.subtitle-app {
-  font-size: clamp(16px, 2vw, 22px);
-  text-align: center;
-  color: rgba(255, 236, 190, 0.92);
-  font-style: italic;
-  margin: 0 auto 18px;
-  max-width: 780px;
+
+.scrapbook-content {
+  background: #FFFEF9;
+  border: 2px solid #D4A574;
+  padding: 20px 20px;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Carte gris foncée */
-.hero-card {
-  margin: 18px auto 0;
-  padding: 18px 18px;
-  border-radius: 18px;
-  background: rgba(10, 12, 14, 0.40);
-  border: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-  max-width: 860px;
+.tape-piece {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 100px;
+  height: 24px;
+  background: rgba(255, 250, 235, 0.7);
+  border: 1px solid rgba(212, 165, 116, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Texte dans la carte */
-.hero-text {
-  color: rgba(255,255,255,0.92);
-  font-size: 18px;
-  font-style: italic;
-  line-height: 1.55;
+
+.handwritten-text {
+  color: #5D4E37;
+  font-size: 14px;
+  line-height: 1.6;
   margin: 10px 0;
+  font-family: 'Comic Sans MS', 'Marker Felt', cursive;
 }
 
-.hero-text--muted {
-  color: rgba(255,255,255,0.78);
+.handwritten-text strong {
+  color: #C9A875;
+  font-weight: 700;
 }
 
-/* Boutons */
+
+
+
 .hero-actions {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .hero-btn {
@@ -152,36 +158,539 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-weight: 800;
-  padding: 12px 16px;
-  border-radius: 14px;
-  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  font-weight: 700;
+  padding: 14px 28px;
+  transition: all 0.25s ease;
+  font-size: 16px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+  position: relative;
 }
 
 .hero-btn--left {
-  color: #0b0b0c;
-  background: linear-gradient(135deg, #f15d08, #e6aa06);
+  color: #FFFDF8;
+  background: linear-gradient(135deg, #C9A875, #B8906A);
+  box-shadow:
+    0 4px 12px rgba(201, 168, 117, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .hero-btn--left:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px) rotate(-1deg);
+  box-shadow:
+    0 8px 20px rgba(201, 168, 117, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  filter: brightness(1.05);
 }
 
 .hero-btn--right {
-  color: rgba(255,255,255,0.92);
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
+  color: #5D4E37;
+  background: rgba(212, 165, 116, 0.15);
+  border: 2.5px solid #C9A875;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 10px rgba(201, 168, 117, 0.2);
 }
 
 .hero-btn--right:hover {
-  transform: translateY(-2px);
-  background: rgba(255,255,255,0.12);
+  transform: translateY(-3px) rotate(1deg);
+  background: rgba(212, 165, 116, 0.25);
+  border-color: #B8906A;
+  box-shadow: 0 6px 16px rgba(201, 168, 117, 0.3);
 }
 
 
-/* Petite amélioration mobile */
+
+/* Badge tampon */
+.stamp-badge {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  width: 90px;
+  height: 90px;
+  border: 3px dashed #C9A875;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(12deg);
+  background: rgba(212, 165, 116, 0.1);
+  font-family: 'Arial Black', sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  color: #C9A875;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  box-shadow: inset 0 0 0 1px rgba(201, 168, 117, 0.3);
+}
+
+
+/* Tampon "Let's go" */
+.stamp-text {
+  display: inline-block;
+  border: 3px solid #C9A875;
+  padding: 8px 16px;
+  font-family: 'Courier New', monospace;
+  font-weight: 900;
+  font-size: 14px;
+  color: #C9A875;
+  letter-spacing: 2px;
+  margin: -5px 0;
+  opacity: 0.8;
+}
+
+/* globe trotter */
+.mini-stamp {
+  position: absolute;
+  font-size: 12px;
+  color: rgba(201, 168, 117, 0.5);
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  transform: rotate(-8deg);
+}
+
+.scrapbook-item {
+  position: absolute;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+
+
+.scrapbook-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* Boussole */
+.scrapbook-photo2 {
+  width: 70px;
+  height: 70px;
+  top: 80px;
+  left: 50px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  transform: rotate(-5deg);
+
+}
+
+/* Visa */
+.scrapbook-photo3 {
+  width: 140px;
+  height: auto;
+  top: 230px;
+  left: 0px;
+  transform: rotate(-10deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* palmier rose */
+.scrapbook-photo4 {
+  width: 70px;
+  height: 70px;
+  top: 400px;
+  left: 220px;
+  transform: rotate(-5deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Badge Travel */
+.scrapbook-photo5 {
+  width: 110px;
+  height: 110px;
+  bottom: 50px;
+  left: 70px;
+  transform: rotate(-5deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Valise vintage */
+.scrapbook-photo6 {
+  width: 60px;
+  height: auto;
+  bottom: 60px;
+  left: 530px;
+  transform: rotate(-5deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/*HOLIDAYS */
+.scrapbook-photo7 {
+  width: 130px;
+  height: auto;
+  top: 30px;
+  left: 45%;
+  transform: rotate(-5deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/*  Petit timbre */
+.scrapbook-photo8 {
+  width: 120px;
+  height: auto;
+  top: 260px;
+  left: 510px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Panneau kangourou */
+.scrapbook-photo9 {
+  width: 80px;
+  height: auto;
+  top: 300px;
+  left: 55%;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Van */
+.scrapbook-photo10 {
+  width: 140px;
+  height: auto;
+  top: 230px;
+  right: 240px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+
+.scrapbook-photo11 {
+  width: 70px;
+  height: auto;
+  top: 260px;
+  right: 40px;
+  transform: rotate(20deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+/*Wild & Free */
+.scrapbook-photo12 {
+  width: 100px;
+  height: auto;
+  top: 430px;
+  left: 40%;
+  transform: rotate(-5deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.scrapbook-photo13{
+  width: 450px;
+  height: auto;
+  top: 300px;
+  right: 600px;
+  transform: rotate(-20deg);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+
+/* ------RESPONSIVE-------- */
+
+@media (max-width: 1024px) {
+  
+/* Tampon "Let's explore" */
+.stamp-text {
+  padding: 8px 10px;
+}
+
+/* Boussole */
+.scrapbook-photo2 {
+  width: 50px;
+  height: 60px;
+  top: 80px;
+  left: 25px;
+}
+
+/* palmier rose */
+.scrapbook-photo4 {
+  width: 80px;
+  height: 80px;
+}
+
+/* Badge Travel */
+.scrapbook-photo5 {
+  width: 110px;
+  height: 110px;
+  bottom: 50px;
+  left: 320px;
+}
+
+/* Valise vintage */
+.scrapbook-photo6 { 
+display: none;
+}
+
+/*  Petit timbre */
+.scrapbook-photo8 {
+  width: 100px;
+  top: 200px;
+  left: 430px;
+}
+
+/* Panneau kangourou */
+.scrapbook-photo9 {
+  width: 70px;
+  top: 320px;
+  left: 43%;
+}
+
+/* Van */
+.scrapbook-photo10 {
+  width: 120px;
+  top: 230px;
+  right: 170px;
+}
+
+/* Avion */
+.scrapbook-photo11 {
+  width: 60px; 
+  top: 260px;
+  right: 40px;
+}
+
+
+
+/*Wild & Free */
+.scrapbook-photo12 {
+  width: 100px;
+  height: auto;
+  top: 430px;
+  left: 40%;
+}
+
+.scrapbook-photo13 {
+  width: 350px;
+  top: 330px;
+  right: 650px;
+  
+}
+
+}
+
+@media (max-width: 768px) {
+  
+  /* Tampon "Let's explore" */
+.stamp-text {
+  padding: 7px 7px;
+}
+
+/* palmier rose */
+.scrapbook-photo4 {
+  width: 80px;
+  height: 80px;
+}
+
+/* Badge Travel */
+.scrapbook-photo5 {
+  width: 90px;
+  height: 90px;
+  bottom: 50px;
+  left: 220px;
+}
+
+
+
+/*  Petit timbre */
+.scrapbook-photo8 {
+  width: 100px;
+  top: 200px;
+  left: 330px;
+}
+
+/* Panneau kangourou */
+.scrapbook-photo9 {
+  width: 50px;
+  top: 320px;
+  left: 50%;
+}
+
+/* Van */
+.scrapbook-photo10 {
+  width: 120px;
+  top: 230px;
+  right: 120px;
+}
+
+/* Avion */
+.scrapbook-photo11 {
+  width: 50px; 
+  right: 30px;
+}
+
+/*Wild & Free */
+.scrapbook-photo12 {
+  display: none;
+}
+/* Valise vintage */
+.scrapbook-photo6 { 
+display: none;
+}
+
+/* Boussole */
+.scrapbook-photo2 {
+  display: none;
+}
+
+.scrapbook-photo13 {
+  width: 400px;
+  top: 315px;
+  right: 350px;
+}
+
+}
+
+
 @media (max-width: 520px) {
-  .hero-kicker { font-size: 14px; }
-  .hero-card { padding: 14px; }
-  .hero-text { font-size: 16px; }
+
+ .App-header {
+    align-items: start;
+    padding-top: 20px;
+  }
+
+   .hero {
+    padding-top: 120px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+  .title-app {
+    font-size: 1.9rem;
+  }
+
+.polaroid-photo {
+  display: none;
+}
+
+  .scrapbook-content {
+    padding: 20px 18px;
+  }
+
+  .handwritten-text {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    border-radius: 14px;
+    font-size: 12px;   
+    padding: 10px 14px;
+    border-radius: 14px;
+    letter-spacing: 0.4px;
+
+  }
+
+
+.stamp-badge {
+  display: none;
+}
+.stamp-text {
+ display: none;
+}
+
+.mini-stamp {
+ display: none;
+}
+
+.scrapbook-item {
+  position: absolute;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+.scrapbook-item img {
+  display: none;
+}
+
+.scrapbook-photo2 {
+  display: none;
+
+}
+
+/* Visa */
+.scrapbook-photo3 {
+  display: none;
+}
+
+/* palmier rose */
+.scrapbook-photo4 {
+  display: none;
+}
+
+/* Badge Travel */
+.scrapbook-photo5 {
+  display: none;
+}
+
+/* Valise vintage */
+.scrapbook-photo6 {
+  display: none;
+}
+
+/*HOLIDAYS */
+.scrapbook-photo7 {
+  display: none;
+}
+
+/*  Petit timbre */
+.scrapbook-photo8 {
+  display: none;
+}
+
+/* Panneau kangourou */
+.scrapbook-photo9 {
+  display: none;
+}
+
+/* Van */
+.scrapbook-photo10 {
+  display: none;
+}
+
+
+.scrapbook-photo11 {
+  display: none;
+}
+
+/*Wild & Free */
+.scrapbook-photo12 {
+  display: none;
+}
+.scrapbook-photo13 {
+  display: none;
+}
+
 }

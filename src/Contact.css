@@ -1,10 +1,26 @@
+.contact-page-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .main-contact {
   position: relative;
+  flex: 1;
+  /* Takes remaining space */
+  height: auto;
+  overflow: hidden;
+  padding: 30px 20px;
+  display: grid;
+  place-items: center center;
+
+  background-image: url('./dossier-thailande/pictures/vatika.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 70px 18px 60px;
+  box-sizing: border-box;
+
 }
 
 .overlay-contact {
@@ -14,46 +30,47 @@
   z-index: 1;
 }
 
-/* Conteneur centré */
-.contact-inner{
+
+.contact-inner {
   position: relative;
   z-index: 2;
   width: min(760px, 100%);
   margin: 0 auto;
   text-align: center;
+  /* Conteneur centré */
 }
 
-/* Titre */
+
 .Contact-title {
   margin: 10px 0 8px;
   font-size: clamp(34px, 4vw, 60px);
   color: #fff;
-  text-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
   font-style: italic;
 }
 
-/* Sous-texte */
-.contact-subtitle{
+
+.contact-subtitle {
   margin: 0 auto 18px;
-  color: rgba(255,255,255,0.82);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 16px;
   line-height: 1.5;
   max-width: 620px;
 }
 
-/* Liste */
+
 .contact-list {
   list-style: none;
   padding: 0;
-  margin: 100px auto 0;
+  margin: 80px auto 0;
   display: grid;
   gap: 14px;
 }
 
-/* Lien en mode "ligne" */
+
 .contact-list a {
   text-decoration: none;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255, 255, 255, 0.92);
 
   display: flex;
   align-items: center;
@@ -62,8 +79,8 @@
   padding: 14px 14px;
   border-radius: 16px;
 
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
 
   transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
@@ -71,32 +88,32 @@
 
 .contact-list a:hover {
   transform: translateY(-2px);
-  background: rgba(255,255,255,0.10);
-  border-color: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
-/* Icon */
+
 .icon {
   font-size: 26px;
 }
 
-/* Texte du lien */
-.contact-text{
+/*lien */
+.contact-text {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.2px;
 }
 
-/* Flèche à droite */
-.contact-arrow{
+/* Flèche */
+.contact-arrow {
   margin-left: auto;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 900;
 }
 
-/* Desktop */
-@media (min-width: 1100px){
-  .main-contact{
+/* RESPONSIVE */
+@media (min-width: 1100px) {
+  .main-contact {
     background-position: center -1200px;
   }
 }

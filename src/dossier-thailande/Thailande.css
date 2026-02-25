@@ -1,297 +1,1116 @@
-.premiere-section {
-  position: relative;                            /* pour l'overlay  */
-  background-image: url('./pictures/sunsetthai.jpg');
-  background-size: cover;                        /* L’image prend toute la taille */
-  background-position: center;                   /* L’image est centrée */
-  background-repeat: no-repeat;                  /* Pas de répétition de l’image */
-  min-height: 100vh;                             /* 100% de la hauteur de l'écran */
-  padding: 100px 20px;                           /* Espace intérieur en haut/bas, gauche/droite */
+/*  Importation de polices distinctives  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@400;600;700&display=swap');
+
+/* Variables CSS  */
+:root {
+  /* Couleurs principales - Inspiration temple thaï */
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4D03F;
+  --color-gold-dark: #B8860B;
+  --color-amber: #FF8C00;
+  --color-ruby: #C41E3A;
+  --color-ruby-dark: #8B0000;
+  --color-black: #0A0A0A;
+  --color-charcoal: #1A1A1A;
+  --color-slate: #2D2D2D;
+
+  /* Accent exotique */
+  --color-jade: #00A36C;
+  --color-lotus: #FFB6C1;
+  --color-sunset: #FF6B35;
+
+  /* Texte */
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-light: #FFFFFF;
+  --text-muted: #6A6A6A;
+
+  /* Fond */
+  --bg-primary: #FFFFFF;
+  --bg-dark: #0A0A0A;
+  --bg-light: #FAF9F7;
+  --bg-cream: #FFF8F0;
+
+  /* Typographie */
+  --font-display: 'Playfair Display', serif;
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Outfit', sans-serif;
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-xxl: 8rem;
+
+  /* Effets */
+  --shadow-gold: 0 10px 50px rgba(212, 175, 55, 0.3);
+  --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.3);
+  --shadow-subtle: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  /* Gradients signature */
+  --gradient-gold: linear-gradient(135deg, #F4D03F 0%, #D4AF37 50%, #B8860B 100%);
+  --gradient-ruby: linear-gradient(135deg, #FF6B6B 0%, #C41E3A 50%, #8B0000 100%);
+  --gradient-sunset: linear-gradient(135deg, #FF8C00 0%, #FF6B35 100%);
+  --gradient-dark: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);
+}
+
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--gradient-gold);
+  color: var(--text-light);
+}
+
+/* ===== Page Container ===== */
+.thailand-page {
+  background: var(--bg-primary);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  line-height: 1.7;
+  line-height: 1.7;
+}
+
+/* ===== HERO SECTION — Cinematic & Bold ===== */
+.thailand-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background: var(--bg-dark);
 }
 
-  .overlay {  /* fond */
-  position: absolute;                               /* Positionnement absolu par rapport à .thailande-container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(176, 105, 105, 0.7);    /* teinte du fond */
-  z-index: 1;
-}
-
-  .content {  /* encadrement */
-  position: relative;
-  z-index: 2;                                  /* Passe devant l’overlay */
-  max-width: 1100px;                           /* Largeur maximale du texte */
-   width: 90%;                                 /*  Pour être responsive */
-  color: #292929;                            
-  text-align: justify;                         
-  font-size: 25px;                             
-  background: rgba(251, 251, 251, 0.753);    
-  padding: 30px;
-  border-radius: 10px;
-}
-.thailande-title {  /* titre */
-  color: #000000;
-  font-size: 40px;
-  text-align: center;
-  z-index: 2;              /* Pour rester au-dessus du calque blanc */
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.thailande-list { /* puces */
-  list-style-position: inside;   /* puces */
-  text-align: lefts;
-  margin-top: 40px;
-  padding-left: 20px;
-  font-size: 25px;
-  line-height: 1.6;
-  color: #000;
-}
-
-.thailande-list li {  /* distance entre puces */
-  margin-bottom: 10px; 
-} 
-
-/*  2e SECTION */
-
-
-.deuxieme-section {
-  position: relative;                  /* Nécessaire pour que l'overlay soit positionné par rapport à lui */
-  background-image: url('./pictures/2.jpg');
-  background-size: cover;              /* L’image prend toute la taille du conteneur */
-  background-position: center;         
-  background-repeat: no-repeat;        
-  min-height: 100vh;                   /* 100% de la hauteur de l'écran */
-  padding: 100px 20px;                 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-  .overlay-2 {  /* fond */
-  position: absolute;                  /* Positionnement absolu par rapport à .thailande-container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(83, 77, 77, 0.247); 
-  z-index: 1;
-}
-
-  .texte-itineraire {  /* encadrement */
-  position: relative;
-  z-index: 2;                     /* Passe devant l’overlay */
-  max-width: 1100px;              /* Largeur maximale du texte */
-   width: 90%;                    /*  Pour être responsive tout en restant large */
-  color: #292929;              
-  text-align: justify; 
-  font-size: 25px; 
-  background: rgba(251, 251, 251, 0.8); 
-  padding: 30px;
-  border-radius: 10px;
-}
-
-
-.content-wrapper h1 { /* TITRE */
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 40px;
-  color: #222;
-}
-
-
-
-/* 🔽 3e SECTION bangkok */
-
-.troisieme-section {
-  position: relative;                           
-  background-image: url('./pictures/bangkok4.jpg');
-  background-size: cover;                       
-  background-position: center;                  
-  background-repeat: no-repeat;                 
-  min-height: 100vh;                           
-  padding: 100px 20px;                          
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-  .overlay-3 {     /* fond */
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(105, 100, 100, 0.438); 
-  z-index: 1;
-}
-
-  .texte-bangkok {  /* encadrement */
-  position: relative;
-  z-index: 2; 
-  max-width: 1100px; 
-   width: 90%;         
-  color: #292929; 
-  text-align: justify; 
-  font-size: 25px; 
-  background: rgba(255, 252, 252, 0.7); 
-  padding: 30px;
-  border-radius: 10px;
-}
-
-
-/* Positionnement des photos flottantes */
-.photo4, .photo5 {
+/* Background image avec effet parallaxe */
+.thailand-hero::before {
+  content: '';
   position: absolute;
-  max-width: 400px;               /* grosseur */
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.9);
-  z-index: 3;                     /* devant le texte */
+  inset: -10%;
+  background-image: url('./pictures/sunsetthai.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(0.5) contrast(1.1);
+  z-index: 1;
 }
 
-.photo5 {
-  top: 8%;
-  right: 8%;
+/* Overlay gradient dramatique */
+.thailand-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 20%,
+      rgba(212, 175, 55, 0.25) 0%,
+      transparent 50%),
+    radial-gradient(ellipse at 70% 80%,
+      rgba(196, 30, 58, 0.25) 0%,
+      transparent 50%),
+    linear-gradient(135deg,
+      rgba(10, 10, 10, 0.7) 0%,
+      rgba(26, 26, 26, 0.5) 50%,
+      rgba(10, 10, 10, 0.8) 100%);
+  z-index: 2;
 }
 
-.photo4 {
-  bottom: 8%;
-  left: 5%;
+/* Grain texture pour effet film */
+.thailand-hero-grain {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.25'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.thailand-hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 0 var(--spacing-md);
+  max-width: 1100px;
 }
 
 
-.activitebangkok-list { /* puces */
-  list-style-position: inside;  
-  text-align: lefts;
-  margin-top: 40px;
-  padding-left: 20px;
-  font-size: 20x;
+@keyframes badgeGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 50px rgba(212, 175, 55, 0.5);
+  }
+}
+
+/* Titre principal — Impact maximal */
+.thailand-title {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 15vw, 10rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+  color: transparent;
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 0 0 2rem;
+  text-shadow: 0 0 80px rgba(212, 175, 55, 0.5);
+  animation: titleReveal 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  filter: drop-shadow(0 10px 30px rgba(212, 175, 55, 0.4));
+}
+
+@keyframes titleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+    filter: blur(20px) drop-shadow(0 10px 30px rgba(212, 175, 55, 0));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0) drop-shadow(0 10px 30px rgba(212, 175, 55, 0.4));
+  }
+}
+
+/* Sous-titre élégant */
+.thailand-subtitle {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.thailand-subtitle p {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Stats Hero */
+.thailand-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.thailand-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-gold);
+  text-shadow: 0 0 40px rgba(212, 175, 55, 0.6);
+}
+
+.stat-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ===== CONTAINER GÉNÉRAL ===== */
+.thailand-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ===== SECTION HEADERS ===== */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--gradient-gold);
+  border-radius: 2px;
+}
+
+/* ===== ITINÉRAIRE SECTION ===== */
+.thailand-itinerary {
+  padding: var(--spacing-xxl) 0;
+  background: var(--bg-light);
+}
+
+.itinerary-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.lead-text {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.itinerary-content p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.itinerary-content strong {
+  color: var(--color-gold-dark);
+  font-weight: 700;
+}
+
+/* Header inline (sans hero) */
+.destination-header-inline {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: 2.5rem;
+  border-bottom: 3px solid;
+  border-image: var(--gradient-gold) 1;
+}
+
+.destination-header-inline h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.destination-header-inline .destination-tagline {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-shadow: none;
+}
+
+/* ===== CONTENT LAYOUTS ===== */
+
+.intro-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+/* ===== CARDS & BOXES ===== */
+.info-card {
+  background: linear-gradient(135deg, var(--bg-cream) 0%, white 100%);
+  border-left: 4px solid var(--color-gold);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-gold);
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 2px solid var(--color-amber);
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle,
+      rgba(255, 140, 0, 0.1) 0%,
+      transparent 70%);
+  pointer-events: none;
+}
+
+.highlight-box.gold {
+  background: linear-gradient(135deg, var(--bg-cream) 0%, #FFF8E1 100%);
+  border: 3px solid var(--color-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.tip-box {
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+  color: var(--text-primary);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid var(--color-ruby);
+  box-shadow: var(--shadow-subtle);
+}
+
+.tip-box h4 {
+  color: black;
+}
+
+.tip-box p {
+  color: var(--text-secondary);
+}
+
+/* ===== ACTIVITIES GRID ===== */
+.activities-list {
+  margin: 2rem 0;
+}
+
+.activities-list h4 {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.activities-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activities-list li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.activities-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ===== DUAL COLUMN LAYOUT ===== */
+.thailand-destination {
+  padding: var(--spacing-xl) 0;
+}
+
+.dual-column {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+  margin: var(--spacing-lg) 0;
+}
+
+.dual-column--reversed {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.dual-column--reversed .column-image {
+  order: -1;
+  /* Image appears on the left on desktop */
+}
+
+.dual-column--reversed .column-text {
+  order: 1;
+  /* Text appears on the right on desktop */
+}
+
+.column-text p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* ===== IMAGES ===== */
+.feature-image {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-dark);
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.feature-image:hover img {
+  transform: scale(1.1);
+}
+
+.image-caption {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+.image-caption p {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-secondary);
   line-height: 1.6;
-  color: #000000;
+  margin: 0;
+  text-align: center;
 }
 
-.activitebangkok-list li {  /* distance entre puces */
-  margin-bottom: 5px; 
-} 
-
-
-    /*  4e SECTION ao-nang */
-
-
-.quatrieme-section {
-  position: relative; 
-  background-image: url('./pictures/mangrove.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  min-height: 100vh; 
-  padding: 100px 20px; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.image-caption-bottom {
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  text-align: center;
 }
 
-  .overlay-4 {  /* fond */
-  position: absolute; 
-  top: 0;
-  left: 0;
+.image-caption-bottom p {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.image-caption-bottom.small {
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.image-caption-bottom.small p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.feature-image:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-dark-intense);
+}
+
+/* ------ CAROUSEL ----- */
+.thailand-carousel-container {
+  margin: 4rem auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.thailand-carousel {
+  position: relative;
   width: 100%;
-  height: 100%;
-  background-color: rgba(75, 67, 67, 0.381); 
+  aspect-ratio: 16/9;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-dark);
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
   z-index: 1;
 }
 
-  .texte-ao-nang {  /* encadrement */
-  position: relative;
-  z-index: 2; 
-  max-width: 1100px; 
-   width: 90%;        
-  color: #292929; 
-  text-align: justify; 
-  font-size: 25px; 
-  background: rgba(251, 251, 251, 0.825); 
-  padding: 30px;
-  border-radius: 10px;
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
 }
 
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-           /*  5e SECTION koh-phiphi */    
+.carousel-caption-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
 
-.cinquieme-section {
-  position: relative; 
-  background-image: url('./pictures/koh-phi-phi.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  min-height: 100vh; 
-  padding: 100px 20px; 
+.carousel-caption-bottom p {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
 }
 
-  .overlay-5 {  /* fond */
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(113, 93, 93, 0.377); 
-  z-index: 1;
+.carousel-control:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  transform: translateY(-50%) scale(1.1);
 }
 
-  .texte-koh-phiphi {  /* encadrement */
-  position: relative;
-  z-index: 2; 
-  max-width: 1100px; 
-   width: 90%;         
-  color: #292929; 
-  text-align: justify; 
-  font-size: 25px; 
-  background: rgba(251, 251, 251, 0.747); 
-  padding: 30px;
-  border-radius: 10px;
+.carousel-control.prev {
+  left: 2rem;
 }
 
-      /* 🔽 6e SECTION koh-lanta */  
+.carousel-control.next {
+  right: 2rem;
+}
 
-      
-.sixieme-section {
-  position: relative; 
-  background-image: url('./pictures/koh-lanta1.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  min-height: 100vh; 
-  padding: 100px 20px; 
+.carousel-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 0.8rem;
+  z-index: 10;
 }
 
-  .overlay-6 {  /* fond */
-  position: absolute; 
-  top: 0;
-  left: 0;
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.dot.active {
+  background: var(--color-gold);
+  transform: scale(1.3);
+}
+
+.image-caption p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Image Mosaic */
+.image-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.mosaic-item .feature-image {
+  height: 300px;
+}
+
+.mosaic-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.beach-card .feature-image,
+.excursion-card .feature-image {
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.beach-card .beach-image,
+.excursion-card .excursion-image {
+  margin-bottom: 0;
+}
+
+.mosaic-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.4s ease;
+  aspect-ratio: 4/3;
+}
+
+.mosaic-item.large {
+  grid-column: 1 / -1;
+  aspect-ratio: 16/9;
+}
+
+.mosaic-item:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-gold);
+  z-index: 10;
+}
+
+.mosaic-item img {
   width: 100%;
   height: 100%;
-  background-color: rgba(42, 37, 37, 0.192); 
-  z-index: 1;
+  object-fit: cover;
 }
 
-  .texte-koh-lanta {  
+/* ----- BEACHES SHOWCASE ----- */
+.beaches-showcase {
+  margin: 3rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, var(--bg-cream) 0%, white 100%);
+  border-radius: 24px;
+}
+
+.beaches-showcase h3 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+
+.beach-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.beach-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.beach-card:hover {
+  transform: translateY(-8px) rotate(1deg);
+  box-shadow: var(--shadow-gold);
+  border-color: var(--color-gold);
+}
+
+.beach-emoji {
+  display: none;
+}
+
+.beach-card h4 {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.beach-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.beach-image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-subtle);
+}
+
+.beach-note {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+/* ===== EXCURSIONS ===== */
+.excursions-section {
+  margin: 3rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, var(--bg-cream) 0%, white 100%);
+  border-radius: 24px;
+  border: 3px solid var(--color-gold);
+}
+
+.excursions-section h3 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.excursions-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.excursion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.excursion-card {
+  background: white;
+  color: var(--text-primary);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
+  border: 2px solid transparent;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
-  z-index: 2; 
-  max-width: 1100px; 
-  width: 90%;         
-  color: #292929; 
-  text-align: justify; 
-  font-size: 25px; 
-  background: rgba(251, 251, 251, 0.836); 
-  padding: 30px;
-  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.excursion-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: var(--shadow-gold);
+}
+
+.excursion-icon {
+  display: none;
+}
+
+.excursion-card h4 {
+  font-family: var(--font-body);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem;
+}
+
+.excursion-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.excursion-image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Section Koh Lanta  */
+.thailand-destination.featured {
+  background: linear-gradient(to bottom,
+      var(--bg-light) 0%,
+      var(--bg-cream) 50%,
+      var(--bg-light) 100%);
+  padding: var(--spacing-lg) 0;
+}
+
+
+/* ===== OUTRO SECTION ===== */
+.thailand-outro {
+  padding: var(--spacing-xxl) 0;
+  background: var(--bg-dark);
+  color: white;
+  text-align: center;
+}
+
+.outro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.outro-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-gold);
+  margin: 0 0 2rem;
+}
+
+.outro-content p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.outro-highlight {
+  background: rgba(212, 175, 55, 0.1);
+  border: 2px solid var(--color-gold);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.outro-highlight p {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 1200px) {
+  .image-mosaic {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --spacing-xxl: 5rem;
+  }
+
+  .thailand-hero {
+    height: 80vh;
+    min-height: 600px;
+  }
+
+  .thailand-hero::before {
+    background-attachment: scroll;
+  }
+
+  .thailand-hero-stats {
+    gap: 2rem;
+  }
+
+  /* Keep 2 columns at 1024px and 768px as requested */
+  .dual-column,
+  .dual-column--reversed {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+  }
+
+  .activities-grid,
+  .beach-cards,
+  .excursion-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .destination-header-inline {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .thailand-container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .thailand-destination {
+    background: linear-gradient(to bottom,
+        var(--bg-light) 0%,
+        var(--bg-cream) 50%,
+        var(--bg-light) 100%) !important;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .thailand-hero-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .info-card,
+  .highlight-box,
+  .tip-box,
+  .info-box {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 16px;
+    background: white;
+    box-shadow: var(--shadow-subtle);
+    border: 2px solid var(--color-gold);
+  }
+
+  .info-card h3,
+  .highlight-box h4,
+  .tip-box h4,
+  .info-box h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .beaches-showcase,
+  .excursion-card {
+    padding: 2rem;
+  }
+
+  .image-mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaic-item.large {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .dual-column,
+  .dual-column--reversed {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .dual-column .column-image,
+  .dual-column--reversed .column-image {
+    order: -1;
+  }
+
+  .activities-grid,
+  .beach-cards,
+  .excursion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-header-inline {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .info-card,
+  .highlight-box,
+  .tip-box {
+    padding: 1.25rem;
+  }
+
+  .beach-card {
+    padding: 1.5rem;
+  }
+
+  .excursion-card {
+    padding: 1.75rem;
+  }
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+[data-aos] {
+  transition-duration: 1.2s;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .thailand-hero::before {
+    position: static;
+    filter: none;
+  }
+}
+
+/* ===== ACCESSIBILITY ===== */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== FOCUS STYLES ===== */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 4px;
 }

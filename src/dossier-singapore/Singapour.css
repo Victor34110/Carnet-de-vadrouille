@@ -1,66 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700;800&family=Cinzel:wght@400;600;700&display=swap');
+
+:root {
+  --color-accent: #0047AB;
+  /* Sapphire Blue */
+  --color-accent-light: #007FFF;
+  /* Azure Blue */
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --bg-primary: #FFFFFF;
+  --bg-cream: #F9F9F9;
+  --font-display: 'Playfair Display', serif;
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Outfit', sans-serif;
+  --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.singapore-page {
+  background: var(--bg-primary);
+  font-family: var(--font-body);
+  color: var(--text-primary);
+}
+
 .singapore-container {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 6rem 2rem;
 }
 
 .singapore-text {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.singapore-text h1 {
-  font-size: 48px;
-  font-style: italic;
-  margin: 0 0 10px 0;
+.singapore-title {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  background-clip: text;
+  margin-bottom: 2rem;
 }
+
 .subtitle-app-sing {
-
-  font-size: 25px;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
   text-align: center;
-  color: rgba(44, 3, 251, 0.8);
+  color: blue;
   font-style: italic;
-  margin-top: 40px;   /* espace au-dessus*/
-  margin-bottom: 60px; /* espace en dessous*/
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .singapore-text p {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  text-align: justify;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
 }
 
-/* Zone du slider */
-.singapore-slider {
+.singapore-text p em {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* ---- CAROUSEL ---- */
+.thailand-carousel-container {
+  margin: 6rem auto;
+  max-width: 500px;
   position: relative;
-  padding: 40px 0 50px; /*pagination */
 }
 
-/* Taille du viewport du slider */
-.coverflow-swiper {
-  width: 50%;
+.thailand-carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-dark);
 }
 
-/* Chaque slide : largeur auto pour coverflow */
-.coverflow-slide {
-  width: 240px; /*taille globale des slides*/
-  height: 650px; /* hauteur des slides */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.carousel-caption-bottom p {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
 }
 
-.coverflow-slide img {
-  width: 80%;
-  height: 80%;
-  object-fit: cover;     /* remplissage */
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(210, 204, 204, 0.659);
+.carousel-control:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-50%) scale(1.1);
 }
 
-/* Responsive */
+.carousel-control.prev {
+  left: 2rem;
+}
+
+.carousel-control.next {
+  right: 2rem;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--color-accent);
+  transform: scale(1.3);
+}
+
+@media (max-width: 1024px) {
+  .thailand-carousel {
+    aspect-ratio: 4/3;
+  }
+}
+
 @media (max-width: 768px) {
-  .coverflow-slide {
-    width: 200px;
-    height: 300px;
+  .singapore-container {
+    padding: 3rem 1.5rem;
   }
 }
