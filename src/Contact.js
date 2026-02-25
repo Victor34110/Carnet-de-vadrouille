@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaInstagram } from 'react-icons/fa';
 import fondContact from './fond-contact.jpg';
 import Navbar from './Navbar';
 
@@ -31,6 +31,8 @@ function Contact() {
               </a>
             </li>
 
+
+
             <li>
               <a
                 href="https://linkedin.com/in/galian-victor"
@@ -41,6 +43,20 @@ function Contact() {
                 <span className="contact-text">LinkedIn</span>
               </a>
             </li>
+
+           <li>
+              <a
+                href="https://www.instagram.com/vic_gln34/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="icon" />
+                <span className="contact-text">Instagram</span>
+              </a>
+            </li>
+
+
+
 
             <li>
               <a
@@ -53,12 +69,15 @@ function Contact() {
               </a>
             </li>
 
+
+
             <li>
               <a href="mailto:vic.galian22@gmail.com">
                 <FaEnvelope className="icon" />
                 <span className="contact-text">vic.galian22@gmail.com</span>
               </a>
             </li>
+
           </ul>
         </div>
       </div>
