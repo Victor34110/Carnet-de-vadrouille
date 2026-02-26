@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Carnet-de-vadrouille/static/css/main.adbbebad.css",
-    "main.js": "/Carnet-de-vadrouille/static/js/main.a51710f7.js",
+    "main.js": "/Carnet-de-vadrouille/static/js/main.d4d03cfd.js",
     "static/js/453.e5a2045b.chunk.js": "/Carnet-de-vadrouille/static/js/453.e5a2045b.chunk.js",
     "static/media/penida.jpg": "/Carnet-de-vadrouille/static/media/penida.824ed5ec83b3fa35cab2.jpg",
     "static/media/palmier-bali.jpeg": "/Carnet-de-vadrouille/static/media/palmier-bali.9f9431bef68ae345397a.jpeg",
@@ -66,11 +66,11 @@
     "static/media/valise.png": "/Carnet-de-vadrouille/static/media/valise.7bd755d8267dded79092.png",
     "index.html": "/Carnet-de-vadrouille/index.html",
     "main.adbbebad.css.map": "/Carnet-de-vadrouille/static/css/main.adbbebad.css.map",
-    "main.a51710f7.js.map": "/Carnet-de-vadrouille/static/js/main.a51710f7.js.map",
+    "main.d4d03cfd.js.map": "/Carnet-de-vadrouille/static/js/main.d4d03cfd.js.map",
     "453.e5a2045b.chunk.js.map": "/Carnet-de-vadrouille/static/js/453.e5a2045b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.adbbebad.css",
-    "static/js/main.a51710f7.js"
+    "static/js/main.d4d03cfd.js"
   ]
 }
