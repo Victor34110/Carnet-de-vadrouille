@@ -4,7 +4,6 @@ import Navbar from '../Navbar';
 
 
 import bangkok4 from './pictures/bangkok4.jpg';
-import bangkok5 from './pictures/bangkok5.jpg';
 import bangkok2 from './pictures/bangkok2.jpg';
 import bangkok3 from './pictures/bangkok3.jpg';
 import mangrove from './pictures/mangrove.jpg';
@@ -164,7 +163,7 @@ function Thailande() {
               </div>
               <div className="image-caption">
                 <p>
-               Chinatown
+                  Chinatown
                 </p>
               </div>
             </div>
@@ -176,8 +175,8 @@ function Thailande() {
             <div className="mosaic-item">
               <img src={bangkok3} alt="Bangkok rue" />
             </div>
-            
-            
+
+
             <div className="mosaic-item">
               <img src={bangkok4} alt="Bangkok nuit" />
             </div>
@@ -326,7 +325,7 @@ function Thailande() {
               </div>
               <div className="image-caption">
                 <p>
-                  Lanta Miami Resort 
+                  Lanta Miami Resort
                 </p>
               </div>
             </div>
