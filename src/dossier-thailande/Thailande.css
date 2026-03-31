@@ -197,7 +197,6 @@ html {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-weight: 400;
-  font-style: italic;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -294,7 +293,6 @@ html {
 }
 
 .lead-text {
-  font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.8;
@@ -345,7 +343,6 @@ html {
 /* ===== CONTENT LAYOUTS ===== */
 
 .intro-text {
-  font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.8;
@@ -502,10 +499,6 @@ html {
   transition: transform 0.6s ease;
 }
 
-.feature-image:hover img {
-  transform: scale(1.1);
-}
-
 .image-caption {
   margin-top: 1.5rem;
   padding: 0 1rem;
@@ -544,11 +537,6 @@ html {
 .image-caption-bottom.small p {
   font-size: 0.85rem;
   opacity: 0.8;
-}
-
-.feature-image:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-dark-intense);
 }
 
 /* ------ CAROUSEL ----- */

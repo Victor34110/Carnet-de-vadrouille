@@ -35,6 +35,15 @@ function Bali() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const handleSectionScroll = (sectionId) => (event) => {
+    event.preventDefault();
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
 
 
@@ -56,8 +65,6 @@ function Bali() {
           </p>
 
           <div className="bali-hero-actions">
-            <a className="bali-cta" href="#kuta">Commencer l’itinéraire</a>
-            <a className="bali-cta ghost" href="#ubud">Voir les étapes</a>
           </div>
         </div>
       </section>
@@ -116,11 +123,11 @@ function Bali() {
 
       <div className="bali-block-list" data-aos="fade-up">
         <ul>
-          <li><a className="bali-block-link" href="#kuta">2 jours à Kuta (proche de l'aéroport) 🐚</a></li>
-          <li><a className="bali-block-link" href="#ubud">2 jours à Ubud</a></li>
-          <li><a className="bali-block-link" href="#amed">2 jours à Amed</a></li>
-          <li><a className="bali-block-link" href="#nusa-lembongan">5 jours à Nusa Lembongan</a></li>
-          <li><a className="bali-block-link" href="#canggu">3 jours à Canggu</a></li>
+          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('kuta')}>2 jours à Kuta (proche de l'aéroport) 🐚</button></li>
+          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('ubud')}>2 jours à Ubud</button></li>
+          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('amed')}>2 jours à Amed</button></li>
+          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('nusa-lembongan')}>5 jours à Nusa Lembongan</button></li>
+          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('canggu')}>3 jours à Canggu</button></li>
         </ul>
       </div>
 
