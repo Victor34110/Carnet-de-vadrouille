@@ -65,9 +65,9 @@ function Thailande() {
         <div className="thailand-hero-overlay" />
         <div className="thailand-hero-grain" />
 
-        <div className="thailand-hero-content" data-aos="fade-up" data-aos-delay="200">
+        <div className="thailand-hero-content">
           <h1 className="thailand-title">Thaïlande</h1>
-          <div className="thailand-subtitle">
+          <div className="thailand-subtitle" data-aos="fade-up" data-aos-delay="200">
             <p>
               15 jours entre tradition et paradis tropical — De l'effervescence de Bangkok
               aux plages secrètes de Koh Lanta.
@@ -406,14 +406,14 @@ function Thailande() {
                   <img src={fourIslandsPhoto} className="excursion-image" alt="Les 4 Îles" />
                 </div>
                 <h4>Les 4 Îles</h4>
-                <p>Snorkeling et plages de rêve au programme.</p>
+                <p>Snorkeling et plages de rêve au programme</p>
               </div>
               <div className="excursion-card" data-aos="flip-up" data-aos-delay="100">
                 <div className="feature-image">
                   <img src={kohRokPhoto} className="excursion-image" alt="Koh Rok" />
                 </div>
                 <h4>Koh Rok</h4>
-                <p>Snorkeling exceptionnel — un vrai coin de paradis préservé.</p>
+                <p>Snorkeling exceptionnel, un vrai coin de paradis préservé</p>
               </div>
             </div>
           </div>

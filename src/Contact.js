@@ -44,20 +44,6 @@ function Contact() {
               </a>
             </li>
 
-           <li>
-              <a
-                href="https://www.instagram.com/vic_gln34/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="icon" />
-                <span className="contact-text">Instagram</span>
-              </a>
-            </li>
-
-
-
-
             <li>
               <a
                 href="/Carnet-de-vadrouille/CV.pdf"
@@ -75,6 +61,17 @@ function Contact() {
               <a href="mailto:vic.galian22@gmail.com">
                 <FaEnvelope className="icon" />
                 <span className="contact-text">vic.galian22@gmail.com</span>
+              </a>
+            </li>
+
+              <li>
+              <a
+                href="https://www.instagram.com/vic_gln34/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="icon" />
+                <span className="contact-text">Instagram</span>
               </a>
             </li>
 

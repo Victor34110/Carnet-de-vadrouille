@@ -116,8 +116,7 @@
 /* TEXTE SUR LA CARTE */
 
 .destination-Card-tag,
-.destination-Card-name,
-.destination-Card-secret {
+.destination-Card-name {
   position: relative;
   z-index: 1;
 }
@@ -141,24 +140,10 @@
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-.destination-Card-secret {
-  color: rgba(255, 255, 255, 0.88);
-  font-weight: 700;
-  opacity: 0.0;
-  transform: translateY(6px);
-  transition: 0.18s ease;
-}
-
-
 .destination-Card:hover {
   transform: translateY(-4px);
   box-shadow: 0 26px 80px rgba(0, 0, 0, 0.45);
   filter: saturate(1.05);
-}
-
-.destination-Card:hover .destination-Card-secret {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Layout mosaïque */

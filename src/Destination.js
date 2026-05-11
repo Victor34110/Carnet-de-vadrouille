@@ -24,25 +24,21 @@ function Destination() {
           <Link to="/thailande" className="destination-Card destination-Card--thailande">
             <span className="destination-Card-tag">Asie</span>
             <span className="destination-Card-name">Thaïlande</span>
-            <span className="destination-Card-secret">Découvrir →</span>
           </Link>
 
           <Link to="/australie" className="destination-Card destination-Card--australie">
             <span className="destination-Card-tag">Océanie</span>
             <span className="destination-Card-name">Australie</span>
-            <span className="destination-Card-secret">Découvrir →</span>
           </Link>
 
           <Link to="/bali" className="destination-Card destination-Card--bali">
             <span className="destination-Card-tag">Indonésie</span>
             <span className="destination-Card-name">Bali</span>
-            <span className="destination-Card-secret">Découvrir →</span>
           </Link>
 
           <Link to="/singapour" className="destination-Card destination-Card--singapour">
             <span className="destination-Card-tag">City trip</span>
             <span className="destination-Card-name">Singapour</span>
-            <span className="destination-Card-secret">Découvrir →</span>
           </Link>
         </section>
       </div>

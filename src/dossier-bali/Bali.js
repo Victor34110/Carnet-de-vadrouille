@@ -48,7 +48,7 @@ function Bali() {
 
 
 
-    <div className="bali-container" style={{ overflowX: 'hidden' }}>
+    <div className="bali-container">
 
       <Navbar title="Carnet de Vadrouille" variant="bali" />
 

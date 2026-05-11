@@ -19,18 +19,19 @@ i {
 html {
   margin: 0;
   padding: 0;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   overflow-y: auto;
 }
 
 #root {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 *,
