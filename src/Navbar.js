@@ -51,7 +51,7 @@ function Navbar({ title, variant = "default" }) {
         <div id="navbar-links" className={`navbar-links ${isMenuOpen ? 'navbar-links--open' : ''}`}>
           <Link to="/" className="navbar-link" onClick={closeMenu}>Accueil</Link>
           <Link to="/destination" className="navbar-link" onClick={closeMenu}>Destinations</Link>
-          <Link to="/Contact" className="navbar-link navbar-contact" onClick={closeMenu}>Contact</Link>
+          <Link to="/Contact" className="navbar-link" onClick={closeMenu}>Contact</Link>
         </div>
         
         {/* Menu burger */}

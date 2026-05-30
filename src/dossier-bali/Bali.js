@@ -249,14 +249,23 @@ function Bali() {
       <div className="bali-gallery" data-aos="fade-up">
         <div className="bali-gallery-row">
 
-          <div className="bali-gallery-item">
-            <img src={amedtwo} alt="Snorkeling à Amed" />
+          <div className="bali-gallery-card">
+            <div className="bali-gallery-item">
+              <img src={amedtwo} alt="Pyramides sous-marines d'Amed" />
+            </div>
+            <div className="bali-gallery-caption">Pyramides sous-marines d'Amed</div>
           </div>
-          <div className="bali-gallery-item">
-            <img src={amethree} alt="Tortue à Amed" />
+          <div className="bali-gallery-card">
+            <div className="bali-gallery-item">
+              <img src={amethree} alt="Tortue à Amed" />
+            </div>
+            <div className="bali-gallery-caption">Tortue à Amed</div>
           </div>
-          <div className="bali-gallery-item">
-            <img src={amedone} alt="Plongée à Amed" />
+          <div className="bali-gallery-card">
+            <div className="bali-gallery-item">
+              <img src={amedone} alt="Plongée à Amed" />
+            </div>
+            <div className="bali-gallery-caption">Plongée à Amed</div>
           </div>
         </div>
       </div>

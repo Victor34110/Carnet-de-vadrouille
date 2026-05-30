@@ -172,13 +172,23 @@ function Thailande() {
           {/* Petite mosaïque */}
           <div className="image-mosaic" data-aos="fade-up" style={{ marginTop: '2rem' }}>
 
-            <div className="mosaic-item">
-              <img src={bangkok3} alt="Bangkok rue" />
+            <div className="mosaic-card">
+              <div className="mosaic-item">
+                <img src={bangkok3} alt="Marché local à Bangkok" />
+              </div>
+              <div className="mosaic-caption">
+                <p>Marché local</p>
+              </div>
             </div>
 
 
-            <div className="mosaic-item">
-              <img src={bangkok4} alt="Bangkok nuit" />
+            <div className="mosaic-card">
+              <div className="mosaic-item">
+                <img src={bangkok4} alt="Wat Arun à Bangkok" />
+              </div>
+              <div className="mosaic-caption">
+                <p>Temple de Wat Arun</p>
+              </div>
             </div>
           </div>
 
@@ -205,7 +215,7 @@ function Thailande() {
               </div>
               <div className="image-caption">
                 <p>
-                  La mangrove offre en kayak
+                  La mangrove en kayak
                 </p>
               </div>
             </div>

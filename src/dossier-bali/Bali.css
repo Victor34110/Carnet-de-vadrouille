@@ -278,7 +278,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--color-gold), var(--color-bronze), var(--color-jungle));
+  background: var(--color-jungle);
 }
 
 .bali-intro-title {
@@ -620,6 +620,10 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.bali-gallery-card {
+  min-width: 0;
+}
+
 .bali-gallery-item {
   position: relative;
   overflow: hidden;
@@ -639,6 +643,16 @@ h1 {
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
+}
+
+.bali-gallery-caption {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
 }
 
 
@@ -671,7 +685,7 @@ h1 {
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(90deg, var(--color-gold), var(--color-bronze), var(--color-jungle));
+  background: var(--color-jungle);
 }
 
 .bali-content-card .bali-block p {

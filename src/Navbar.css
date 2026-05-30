@@ -43,11 +43,11 @@
 /* THAÏLANDE */
 .navbar--thailand {
   background: rgba(75, 35, 95, 0.95);
-  border-bottom: 2px solid rgba(255, 193, 7, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar--thailand .navbar-title {
-  color: #FFD54F;
+  color: #FFFFFF;
 }
 
 .navbar--thailand .navbar-link {
@@ -56,15 +56,15 @@
 
 .navbar--thailand .navbar-link:hover {
   color: #FFF;
-  background: rgba(255, 193, 7, 0.15);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .navbar--thailand .navbar-contact {
-  background: linear-gradient(135deg, #FF6F00, #FFB300);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .navbar--thailand .navbar-contact:hover {
-  background: linear-gradient(135deg, #FF8A33, #FFC933);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
 .App-header {
   position: relative;
   background: #F8F6F0;
@@ -131,10 +133,15 @@
 
 .handwritten-text {
   color: #5D4E37;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   margin: 10px 0;
-  font-family: 'Comic Sans MS', 'Marker Felt', cursive;
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+.scrapbook-content .handwritten-text:first-of-type {
+  text-align: center;
+  font-weight: 700;
 }
 
 .handwritten-text strong {
