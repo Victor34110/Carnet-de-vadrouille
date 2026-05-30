@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Carnet-de-vadrouille/static/css/main.adbbebad.css",
-    "main.js": "/Carnet-de-vadrouille/static/js/main.d4d03cfd.js",
+    "main.css": "/Carnet-de-vadrouille/static/css/main.9c378ea0.css",
+    "main.js": "/Carnet-de-vadrouille/static/js/main.41587124.js",
     "static/js/453.e5a2045b.chunk.js": "/Carnet-de-vadrouille/static/js/453.e5a2045b.chunk.js",
     "static/media/penida.jpg": "/Carnet-de-vadrouille/static/media/penida.824ed5ec83b3fa35cab2.jpg",
     "static/media/palmier-bali.jpeg": "/Carnet-de-vadrouille/static/media/palmier-bali.9f9431bef68ae345397a.jpeg",
@@ -50,7 +50,6 @@
     "static/media/van.png": "/Carnet-de-vadrouille/static/media/van.43959b00f96d073b3c33.png",
     "static/media/yellowbridge.jpg": "/Carnet-de-vadrouille/static/media/yellowbridge.07b7c0125cc2971a76ac.jpg",
     "static/media/finnss.jpg": "/Carnet-de-vadrouille/static/media/finnss.33f921eac138178764c3.jpg",
-    "static/media/bangkok5.jpg": "/Carnet-de-vadrouille/static/media/bangkok5.b65bae7c5bc5990d7927.jpg",
     "static/media/extrait_journal.png": "/Carnet-de-vadrouille/static/media/extrait_journal.3c5c296d22f63f535cc1.png",
     "static/media/bangkok4.jpg": "/Carnet-de-vadrouille/static/media/bangkok4.a795cfeda753de05e049.jpg",
     "static/media/four-islands.jpg": "/Carnet-de-vadrouille/static/media/four-islands.52e1d79369b649d48120.jpg",
@@ -65,12 +64,12 @@
     "static/media/khantiang-beach.jpeg": "/Carnet-de-vadrouille/static/media/khantiang-beach.3d435a840b903994ba5c.jpeg",
     "static/media/valise.png": "/Carnet-de-vadrouille/static/media/valise.7bd755d8267dded79092.png",
     "index.html": "/Carnet-de-vadrouille/index.html",
-    "main.adbbebad.css.map": "/Carnet-de-vadrouille/static/css/main.adbbebad.css.map",
-    "main.d4d03cfd.js.map": "/Carnet-de-vadrouille/static/js/main.d4d03cfd.js.map",
+    "main.9c378ea0.css.map": "/Carnet-de-vadrouille/static/css/main.9c378ea0.css.map",
+    "main.41587124.js.map": "/Carnet-de-vadrouille/static/js/main.41587124.js.map",
     "453.e5a2045b.chunk.js.map": "/Carnet-de-vadrouille/static/js/453.e5a2045b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.adbbebad.css",
-    "static/js/main.d4d03cfd.js"
+    "static/css/main.9c378ea0.css",
+    "static/js/main.41587124.js"
   ]
 }
