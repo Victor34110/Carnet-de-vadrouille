@@ -343,7 +343,7 @@
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--color-gold);
+  color: var(--color-sand);
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -392,9 +392,9 @@
 
 .bali-facts-tip {
   padding: 1.25rem;
-  background: rgba(201, 165, 92, 0.15);
+  background: rgba(178, 169, 151, 0.15);
   border-radius: 12px;
-  border-left: 3px solid var(--color-gold);
+  border-left: 3px solid var(--color-sand);
   font-family: var(--font-serif);
   font-size: 0.9rem;
   font-style: italic;
@@ -447,7 +447,7 @@
   background: white;
   border: none;
   border-radius: 16px;
-  border-left: 4px solid var(--color-gold);
+  border-left: 4px solid var(--color-jungle);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.3s var(--transition-smooth);
   position: relative;

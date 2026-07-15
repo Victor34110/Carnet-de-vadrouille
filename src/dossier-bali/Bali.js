@@ -50,8 +50,7 @@ function Bali() {
 
     <div className="bali-container">
 
-      <Navbar title="Carnet de Vadrouille" variant="bali" />
-
+      <Navbar />
 
       <section className="bali-hero" data-aos="fade-up">
         <div className="bali-hero-overlay" />
@@ -123,7 +122,7 @@ function Bali() {
 
       <div className="bali-block-list" data-aos="fade-up">
         <ul>
-          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('kuta')}>2 jours à Kuta (proche de l'aéroport) 🐚</button></li>
+          <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('kuta')}>2 jours à Kuta (proche de l'aéroport)</button></li>
           <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('ubud')}>2 jours à Ubud</button></li>
           <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('amed')}>2 jours à Amed</button></li>
           <li><button className="bali-block-link" type="button" onClick={handleSectionScroll('nusa-lembongan')}>5 jours à Nusa Lembongan</button></li>

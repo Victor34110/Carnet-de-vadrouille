@@ -58,8 +58,7 @@ function Thailande() {
   return (
     <div className="thailand-page">
 
-      <Navbar title="Carnet de Vadrouille" variant="thailand" />
-
+      <Navbar />
       {/* ----- HERO SECTION ---- */}
       <section className="thailand-hero">
         <div className="thailand-hero-overlay" />
@@ -465,19 +464,6 @@ function Thailande() {
           </div>
         </div>
 
-      </section>
-
-
-      {/* ----- OUTRO ----- */}
-      <section className="thailand-outro" data-aos="fade-up">
-        <div className="thailand-container">
-          <div className="outro-content">
-            <h2>Un voyage inoubliable</h2>
-            <p>
-              La Thaïlande offre un contraste parfait pour un premier voyage en Asie du Sud-Est.
-            </p>
-          </div>
-        </div>
       </section>
 
     </div >
